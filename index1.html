@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>中文詞語學習機 - 形容詞篇</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            margin: 0;
+            padding: 20px;
+            text-align: center;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        h1 {
+            color: #333;
+        }
+        button {
+            background-color: #007BFF;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+            margin-bottom: 20px;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+        .word-item {
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 15px;
+            margin-bottom: 15px;
+            text-align: left;
+            background-color: #fafafa;
+        }
+        .word-title {
+            font-size: 20px;
+            font-weight: bold;
+            color: #2c3e50;
+        }
+        .pinyin {
+            font-size: 14px;
+            color: #7f8c8d;
+            margin-left: 10px;
+        }
+        .definition, .sentence {
+            font-size: 16px;
+            line-height: 1.6;
+            margin-top: 10px;
+        }
+        .word-link {
+            text-decoration: none;
+            color: inherit;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>中文詞語學習機 - 形容詞篇</h1>
+    <button onclick="generateWords()">產生新詞語</button>
+    <div id="wordsContainer">
+        <div class="word-item">
+            <div class="word-title">
+                <a class="word-link" href="https://www.moedict.tw/清澈" target="_blank">清澈</a>
+                <span class="pinyin">(ㄑㄧㄥ ㄔㄜˋ)</span>
+            </div>
+            <p class="definition">
+                解釋：形容水或空氣很乾淨、很透明。 <br>
+                <span class="pinyin">(ㄒㄧㄥˊ ㄖㄨㄥˊ ㄕㄨㄟˇ ㄏㄨㄛˋ ㄎㄨㄥ ㄑㄧˋ ㄏㄣˇ ㄍㄢ ㄐㄧㄥˋ、ㄏㄣˇ ㄊㄡˋ ㄇㄧㄥˊ。)</span>
+            </p>
+            <p class="sentence">
+                造句：溪水清澈見底。 <br>
+                <span class="pinyin">(ㄒㄧ ㄕㄨㄟˇ ㄑㄧㄥ ㄔㄜˋ ㄐㄧㄢˋ ㄉㄧˇ。)</span>
+            </p>
+        </div>
+        <div class="word-item">
+            <div class="word-title">
+                <a class="word-link" href="https://www.moedict.tw/熱鬧" target="_blank">熱鬧</a>
+                <span class="pinyin">(ㄖㄜˋ ㄋㄠˋ)</span>
+            </div>
+            <p class="definition">
+                解釋：形容有很多聲音，很多人在活動。 <br>
+                <span class="pinyin">(ㄒㄧㄥˊ ㄖㄨㄥˊ ㄧㄡˇ ㄏㄣˇ ㄉㄨㄛ ㄕㄥ ㄧㄣ，ㄏㄣˇ ㄉㄨㄛ ㄖㄣˊ ㄗㄞˋ ㄏㄨㄛˊ ㄉㄨㄥˋ。)</span>
+            </p>
+            <p class="sentence">
+                造句：夜市裡人山人海，非常熱鬧。 <br>
+                <span class="pinyin">(ㄧㄝˋ ㄕˋ ㄌㄧˇ ㄖㄣˊ ㄕㄢ ㄖㄣˊ ㄏㄞˇ，ㄈㄟ ㄔㄤˊ ㄖㄜˋ ㄋㄠˋ。)</span>
+            </p>
+        </div>
+        <div class="word-item">
+            <div class="word-title">
+                <a class="word-link" href="https://www.moedict.tw/謙虛" target="_blank">謙虛</a>
+                <span class="pinyin">(ㄑㄧㄢ ㄒㄩ)</span>
+            </div>
+            <p class="definition">
+                解釋：形容不驕傲，能接受別人的意見。 <br>
+                <span class="pinyin">(ㄒㄧㄥˊ ㄖㄨㄥˊ ㄅㄨˋ ㄐㄧㄠ ㄠˋ，ㄋㄥˊ ㄐㄧㄝ ㄕㄡˋ ㄅㄧㄝˊ ㄖㄣˊ ㄉㄜ˙ ㄧˋ ㄐㄧㄢˋ。)</span>
+            </p>
+            <p class="sentence">
+                造句：他雖然很厲害，但很謙虛。 <br>
+                <span class="pinyin">(ㄊㄚ ㄙㄨㄟ ㄖㄢˊ ㄏㄣˇ ㄌㄧˋ ㄏㄞˋ，ㄉㄢˋ ㄏㄣˇ ㄑㄧㄢ ㄒㄩ。)</span>
+            </p>
+        </div>
+        <div class="word-item">
+            <div class="word-title">
+                <a class="word-link" href="https://www.moedict.tw/勇敢" target="_blank">勇敢</a>
+                <span class="pinyin">(ㄩㄥˇ ㄍㄢˇ)</span>
+            </div>
+            <p class="definition">
+                解釋：形容有勇氣，不怕危險。 <br>
+                <span class="pinyin">(ㄒㄧㄥˊ ㄖㄨㄥˊ ㄧㄡˇ ㄩㄥˇ ㄑㄧˋ，ㄅㄨˋ ㄆㄚˋ ㄨㄟˊ ㄒㄧㄢˇ。)</span>
+            </p>
+            <p class="sentence">
+                造句：消防員很勇敢，進入火場救人。 <br>
+                <span class="pinyin">(ㄒㄧㄠ ㄈㄤˊ ㄩㄢˊ ㄏㄣˇ ㄩㄥˇ ㄍㄢˇ，ㄐㄧㄣˋ ㄖㄨˋ ㄏㄨㄛˇ ㄔㄤˇ ㄐㄧㄡˋ ㄖㄣˊ。)</span>
+            </p>
+        </div>
+        <div class="word-item">
+            <div class="word-title">
+                <a class="word-link" href="https://www.moedict.tw/聰明" target="_blank">聰明</a>
+                <span class="pinyin">(ㄘㄨㄥ ㄇㄧㄥˊ)</span>
+            </div>
+            <p class="definition">
+                解釋：形容人頭腦靈活，學習得快。 <br>
+                <span class="pinyin">(ㄒㄧㄥˊ ㄖㄨㄥˊ ㄖㄣˊ ㄊㄡˊ ㄋㄠˇ ㄌㄧㄥˊ ㄏㄨㄛˊ，ㄒㄩㄝˊ ㄒㄧˊ ㄉㄜ˙ ㄎㄨㄞˋ。)</span>
+            </p>
+            <p class="sentence">
+                造句：妹妹是個聰明的孩子。 <br>
+                <span class="pinyin">(ㄇㄟˋ ㄇㄟˋ ㄕˋ ㄍㄜˋ ㄘㄨㄥ ㄇㄧㄥˊ ㄉㄜ˙ ㄏㄞˊ ㄗ˙。)</span>
+            </p>
+        </div>
+        <div class="word-item">
+            <div class="word-title">
+                <a class="word-link" href="https://www.moedict.tw/活潑" target="_blank">活潑</a>
+                <span class="pinyin">(ㄏㄨㄛˊ ㄆㄛ)</span>
+            </div>
+            <p class="definition">
+                解釋：形容人很開朗，充滿了生命力。 <br>
+                <span class="pinyin">(ㄒㄧㄥˊ ㄖㄨㄥˊ ㄖㄣˊ ㄏㄣˇ ㄎㄞ ㄌㄤˇ，ㄔㄨㄥ ㄇㄢˇ ㄌㄜ˙ ㄕㄥ ㄇㄧㄥˋ ㄌㄧˋ。)</span>
+            </p>
+            <p class="sentence">
+                造句：這個班級的學生都很活潑。 <br>
+                <span class="pinyin">(ㄓㄜˋ ㄍㄜˋ ㄅㄢ ㄐㄧˊ ㄉㄜ˙ ㄒㄩㄝˊ ㄕㄥ ㄉㄡ ㄏㄣˇ ㄏㄨㄛˊ ㄆㄛ。)</span>
+            </p>
+        </div>
+        <div class="word-item">
+            <div class="word-title">
+                <a class="word-link" href="https://www.moedict.tw/誠實" target="_blank">誠實</a>
+                <span class="pinyin">(ㄔㄥˊ ㄕˊ)</span>
+            </div>
+            <p class="definition">
+                解釋：形容人不會說謊，很真實。 <br>
+                <span class="pinyin">(ㄒㄧㄥˊ ㄖㄨㄥˊ ㄖㄣˊ ㄅㄨˋ ㄏㄨㄟˋ ㄕㄨㄛ ㄏㄨㄤˇ，ㄏㄣˇ ㄓㄣ ㄕˊ。)</span>
+            </p>
+            <p class="sentence">
+                造句：做人要誠實。 <br>
+                <span class="pinyin">(ㄗㄨㄛˋ ㄖㄣˊ ㄧㄠˋ ㄔㄥˊ ㄕˊ。)</span>
+            </p>
+        </div>
+        <div class="word-item">
+            <div class="word-title">
+                <a class="word-link" href="https://www.moedict.tw/簡潔" target="_blank">簡潔</a>
+                <span class="pinyin">(ㄐㄧㄢˇ ㄐㄧㄝˊ)</span>
+            </div>
+            <p class="definition">
+                解釋：形容說話或寫文章不囉唆，很簡單明瞭。 <br>
+                <span class="pinyin">(ㄒㄧㄥˊ ㄖㄨㄥˊ ㄕㄨㄛ ㄏㄨㄚˋ ㄏㄨㄛˋ ㄒㄧㄝˇ ㄨㄣˊ ㄓㄤ ㄅㄨˋ ㄌㄨㄛ ㄙㄨㄛ，ㄏㄣˇ ㄐㄧㄢˇ ㄉㄢ ㄇㄧㄥˊ ㄌㄧㄠˇ。)</span>
+            </p>
+            <p class="sentence">
+                造句：這篇文章寫得簡潔有力。 <br>
+                <span class="pinyin">(ㄓㄜˋ ㄆㄧㄢ ㄨㄣˊ ㄓㄤ ㄒㄧㄝˇ ㄉㄜ˙ ㄐㄧㄢˇ ㄐㄧㄝˊ ㄧㄡˇ ㄌㄧˋ。)</span>
+            </p>
+        </div>
+        <div class="word-item">
+            <div class="word-title">
+                <a class="word-link" href="https://www.moedict.tw/廣闊" target="_blank">廣闊</a>
+                <span class="pinyin">(ㄍㄨㄤˇ ㄎㄨㄛˋ)</span>
+            </div>
+            <p class="definition">
+                解釋：形容地方很大，範圍很廣。 <br>
+                <span class="pinyin">(ㄒㄧㄥˊ ㄖㄨㄥˊ ㄉㄧˋ ㄈㄤ ㄏㄣˇ ㄉㄚˋ，ㄈㄢˊ ㄨㄟˊ ㄏㄣˇ ㄍㄨㄤˇ。)</span>
+            </p>
+            <p class="sentence">
+                造句：天空廣闊無邊。 <br>
+                <span class="pinyin">(ㄊㄧㄢ ㄎㄨㄥ ㄍㄨㄤˇ ㄎㄨㄛˋ ㄨˊ ㄅㄧㄢ。)</span>
+            </p>
+        </div>
+        <div class="word-item">
+            <div class="word-title">
+                <a class="word-link" href="https://www.moedict.tw/簡陋" target="_blank">簡陋</a>
+                <span class="pinyin">(ㄐㄧㄢˇ ㄌㄡˋ)</span>
+            </div>
+            <p class="definition">
+                解釋：形容房子或設備簡單又破舊。 <br>
+                <span class="pinyin">(ㄒㄧㄥˊ ㄖㄨㄥˊ ㄈㄤˊ ㄗ˙ ㄏㄨㄛˋ ㄕㄜˋ ㄅㄟˋ ㄐㄧㄢˇ ㄉㄢ ㄧㄡˋ ㄆㄛˋ ㄐㄧㄡˋ。)</span>
+            </p>
+            <p class="sentence">
+                造句：這個小木屋雖然簡陋，但住起來很溫馨。 <br>
+                <span class="pinyin">(ㄓㄜˋ ㄍㄜ˙ ㄒㄧㄠˇ ㄇㄨˋ ㄨ ㄙㄨㄟ ㄖㄢˊ ㄐㄧㄢˇ ㄌㄡˋ，ㄉㄢˋ ㄓㄨˋ ㄑㄧˇ ㄌㄞˊ ㄏㄣˇ ㄨㄣ ㄒㄧㄣ。)</span>
+            </p>
+        </div>
+    </div>
+</div>
+
+<script>
+    const WORDS = [
+        { word: "美麗", pinyin: "ㄇㄟˇ ㄌㄧˋ", definition: "形容東西或人長得很美、很漂亮。", definitionPinyin: "ㄒㄧㄥˊ ㄖㄨㄥˊ ㄉㄨㄥ ㄒㄧ ㄏㄨㄛˋ ㄖㄣˊ ㄓㄤˇ ㄉㄜ˙ ㄏㄣˇ ㄇㄟˇ、ㄏㄣˇ ㄆㄧㄠˋ ㄌㄧㄤˋ。", sentence: "這朵花非常美麗。", sentencePinyin: "ㄓㄜˋ ㄉㄨㄛˇ ㄏㄨㄚ ㄈㄟ ㄔㄤˊ ㄇㄟˇ ㄌㄧˋ。" },
+        { word: "可愛", pinyin: "ㄎㄜˇ ㄞˋ", definition: "形容人或動物很討人喜歡。", definitionPinyin: "ㄒㄧㄥˊ ㄖㄨㄥˊ ㄖㄣˊ ㄏㄨㄛˋ ㄉㄨㄥˋ ㄨˋ ㄏㄣˇ ㄊㄠˇ ㄖㄣˊ ㄒㄧˇ ㄏㄨㄢ。", sentence: "那隻小貓咪很可愛。", sentencePinyin: "ㄋㄚˋ ㄓ ㄒㄧㄠˇ ㄇㄠ ㄇㄧ ㄏㄣˇ ㄎㄜˇ ㄞˋ。" },
+        { word: "勇敢", pinyin: "ㄩㄥˇ ㄍㄢˇ", definition: "形容人有膽量，不怕困難。", definitionPinyin: "ㄒㄧㄥˊ ㄖㄨㄥˊ ㄖㄣˊ ㄧㄡˇ ㄉㄢˇ ㄌㄧㄤˋ，ㄅㄨˋ ㄆㄚˋ ㄎㄨㄣˋ ㄋㄢˋ。", sentence: "他勇敢地幫助了別人。", sentencePinyin: "ㄊㄚ ㄩㄥˇ ㄍㄢˇ ㄉㄜ˙ ㄅㄤ ㄓㄨˋ ㄌㄜ˙ ㄅㄧㄝˊ ㄖㄣˊ。" },
+        { word: "聰明", pinyin: "ㄘㄨㄥ ㄇㄧㄥˊ", definition: "形容人頭腦靈活，學習得快。", definitionPinyin: "ㄒㄧㄥˊ ㄖㄨㄥˊ ㄖㄣˊ ㄊㄡˊ ㄋㄠˇ ㄌㄧㄥˊ ㄏㄨㄛˊ，ㄒㄩㄝˊ ㄒㄧˊ ㄉㄜ˙ ㄎㄨㄞˋ。", sentence: "妹妹是個聰明的孩子。", sentencePinyin: "ㄇㄟˋ ㄇㄟˋ ㄕˋ ㄍㄜˋ ㄘㄨㄥ ㄇㄧㄥˊ ㄉㄜ˙ ㄏㄞˊ ㄗ˙。" },
+        { word: "健康", pinyin: "ㄐㄧㄢˋ ㄎㄤ", definition: "形容身體沒有生病，狀況很好。", definitionPinyin: "ㄒㄧㄥˊ ㄖㄨㄥˊ ㄕㄣ ㄊㄧˇ ㄇㄟˊ ㄧㄡˇ ㄕㄥ ㄅㄧㄥˋ，ㄓㄨㄤˋ ㄎㄨㄤˋ ㄏㄣˇ ㄏㄠˇ。", sentence: "多運動才能保持健康。", sentencePinyin: "ㄉㄨㄛ ㄩㄣˋ ㄉㄨㄥˋ ㄘㄞˊ ㄋㄥˊ ㄅㄠˇ ㄔˊ ㄐㄧㄢˋ ㄎㄤ。" },
+        { word: "溫柔", pinyin: "ㄨㄣ ㄖㄡˊ", definition: "形容人的態度溫和，不會很兇。", definitionPinyin: "ㄒㄧㄥˊ ㄖㄨㄥˊ ㄖㄣˊ ㄉㄜ˙ ㄊㄞˋ ㄉㄨˋ ㄨㄣ ㄏㄜˊ，ㄅㄨˋ ㄏㄨㄟˋ ㄏㄣˇ ㄒㄩㄥ。", sentence: "媽媽說話很溫柔。", sentencePinyin: "ㄇㄚ ㄇㄚ ㄕㄨㄛ ㄏㄨㄚˋ ㄏㄣˇ ㄨㄣ ㄖㄡˊ。" },
+        { word: "有趣", pinyin: "ㄧㄡˇ ㄑㄩˋ", definition: "形容事情或東西很有意思，讓人喜歡。", definitionPinyin: "ㄒㄧㄥˊ ㄖㄨㄥˊ ㄕˋ ㄑㄧㄥˊ ㄏㄨㄛˋ ㄉㄨㄥ ㄒㄧ ㄏㄣˇ ㄧㄡˇ ㄧˋ ㄙˋ，ㄖㄤˋ ㄖㄣˊ ㄒㄧˇ ㄏㄨㄢ。", sentence: "這本書的故事很有趣。", sentencePinyin: "ㄓㄜˋ ㄅㄣˇ ㄕㄨ ㄉㄜ˙ ㄍㄨˋ ㄕˋ ㄏㄣˇ ㄧㄡˇ ㄑㄩˋ。" },
+        { word: "新鮮", pinyin: "ㄒㄧㄣ ㄒㄧㄢ", definition: "形容東西是剛採收或做好的，沒有放很久。", definitionPinyin: "ㄒㄧㄥˊ ㄖㄨㄥˊ ㄉㄨㄥ ㄒㄧ ㄕˋ ㄍㄤ ㄘㄞˇ ㄕㄡ ㄏㄨㄛˋ ㄗㄨㄛˋ ㄏㄠˇ ㄉㄜ˙，ㄇㄟˊ ㄧㄡˇ ㄈㄤˋ ㄏㄣˇ ㄐㄧㄡˇ。", sentence: "這裡的空氣很新鮮。", sentencePinyin: "ㄓㄜˋ ㄌㄧˇ ㄉㄜ˙ ㄎㄨㄥ ㄑㄧˋ ㄏㄣˇ ㄒㄧㄣ ㄒㄧㄢ。" },
+        { word: "乾淨", pinyin: "ㄍㄢ ㄐㄧㄥˋ", definition: "形容沒有灰塵或髒汙。", definitionPinyin: "ㄒㄧㄥˊ ㄖㄨㄥˊ ㄇㄟˊ ㄧㄡˇ ㄏㄨㄟ ㄔㄣˊ ㄏㄨㄛˋ ㄗㄤ ㄨˋ。", sentence: "房間打掃得很乾淨。", sentencePinyin: "ㄈㄤˊ ㄐㄧㄢ ㄉㄚˇ ㄙㄠˇ ㄉㄜ˙ ㄏㄣˇ ㄍㄢ ㄐㄧㄥˋ。" },
+        { word: "整齊", pinyin: "ㄓㄥˇ ㄑㄧˊ", definition: "形容東西排列得很整齊，沒有亂放。", definitionPinyin: "ㄒㄧㄥˊ ㄖㄨㄥˊ ㄉㄨㄥ ㄒㄧ ㄆㄞˊ ㄌㄧㄝˋ ㄉㄜ˙ ㄏㄣˇ ㄓㄥˇ ㄑㄧˊ，ㄇㄟˊ ㄧㄡˇ ㄌㄨㄢˋ ㄈㄤˋ。", sentence: "把書桌上的東西整理整齊。", sentencePinyin: "ㄅㄚˇ ㄕㄨ ㄓㄨㄛ ㄕㄤˋ ㄉㄜ˙ ㄉㄨㄥ ㄒㄧ ㄓㄥˇ ㄌㄧˇ ㄓㄥˇ ㄑㄧˊ。" },
+        { word: "巨大", pinyin: "ㄐㄩˋ ㄉㄚˋ", definition: "形容東西非常非常大。", definitionPinyin: "ㄒㄧㄥˊ ㄖㄨㄥˊ ㄉㄨㄥ ㄒㄧ ㄈㄟ ㄔㄤˊ ㄈㄟ ㄔㄤˊ ㄉㄚˋ。", sentence: "這座山看起來很巨大。", sentencePinyin: "ㄓㄜˋ ㄗㄨㄛˋ ㄕㄢ ㄎㄢˋ ㄑㄧˇ ㄌㄞˊ ㄏㄣˇ ㄐㄩˋ ㄉㄚˋ。" },
+        { word: "微小", pinyin: "ㄨㄟˊ ㄒㄧㄠˇ", definition: "形容東西非常非常小。", definitionPinyin: "ㄒㄧㄥˊ ㄖㄨㄥˊ ㄉㄨㄥ ㄒㄧ ㄈㄟ ㄔㄤˊ ㄈㄟ ㄔㄤˊ ㄒㄧㄠˇ。", sentence: "螞蟻是很微小的動物。", sentencePinyin: "ㄇㄚˇ ㄧˇ ㄕˋ ㄏㄣˇ ㄨㄟˊ ㄒㄧㄠˇ ㄉㄜ˙ ㄉㄨㄥˋ ㄨˋ。" },
+        { word: "熱情", pinyin: "ㄖㄜˋ ㄑㄧㄥˊ", definition: "形容人很主動，對人很熱絡。", definitionPinyin: "ㄒㄧㄥˊ ㄖㄨㄥˊ ㄖㄣˊ ㄏㄣˇ ㄓㄨˇ ㄉㄨㄥˋ，ㄉㄨㄟˋ ㄖㄣˊ ㄏㄣˇ ㄖㄜˋ ㄌㄨㄛˋ。", sentence: "他對朋友非常熱情。", sentencePinyin: "ㄊㄚ ㄉㄨㄟˋ ㄆㄥˊ ㄧㄡˇ ㄈㄟ ㄔㄤˊ ㄖㄜˋ ㄑㄧㄥˊ。" },
+        { word: "冷淡", pinyin: "ㄌㄥˇ ㄉㄢˋ", definition: "形容人對別人不關心，態度很冷。", definitionPinyin: "ㄒㄧㄥˊ ㄖㄨㄥˊ ㄖㄣˊ ㄉㄨㄟˋ ㄅㄧㄝˊ ㄖㄣˊ ㄅㄨˋ ㄍㄨㄢ ㄒㄧㄣ，ㄊㄞˋ ㄉㄨˋ ㄏㄣˇ ㄌㄥˇ。", sentence: "他總是對人很冷淡。", sentencePinyin: "ㄊㄚ ㄗㄨㄥˇ ㄕˋ ㄉㄨㄟˋ ㄖㄣˊ ㄏㄣˇ ㄌㄥˇ ㄉㄢˋ。" },
+        { word: "平靜", pinyin: "ㄆㄧㄥˊ ㄐㄧㄥˋ", definition: "形容心情或地方沒有吵鬧聲。", definitionPinyin: "ㄒㄧㄥˊ ㄖㄨㄥˊ ㄒㄧㄣ ㄑㄧㄥˊ ㄏㄨㄛˋ ㄉㄧˋ ㄈㄤ ㄇㄟˊ ㄧㄡˇ ㄔㄠˇ ㄋㄠˋ ㄕㄥ。", sentence: "夜晚的公園很平靜。", sentencePinyin: "ㄧㄝˋ ㄨㄢˇ ㄉㄜ˙ ㄍㄨㄥ ㄩㄢˊ ㄏㄣˇ ㄆㄧㄥˊ ㄐㄧㄥˋ。" },
+        { word: "熱鬧", pinyin: "ㄖㄜˋ ㄋㄠˋ", definition: "形容有很多聲音，很多人在活動。", definitionPinyin: "ㄒㄧㄥˊ ㄖㄨㄥˊ ㄧㄡˇ ㄏㄣˇ ㄉㄨㄛ ㄕㄥ ㄧㄣ，ㄏㄣˇ ㄉㄨㄛ ㄖㄣˊ ㄗㄞˋ ㄏㄨㄛˊ ㄉㄨㄥˋ。", sentence: "夜市裡人山人海，非常熱鬧。", sentencePinyin: "ㄧㄝˋ ㄕˋ ㄌㄧˇ ㄖㄣˊ ㄕㄢ ㄖㄣˊ ㄏㄞˇ，ㄈㄟ ㄔㄤˊ ㄖㄜˋ ㄋㄠˋ。" },
+        { word: "輕鬆", pinyin: "ㄑㄧㄥ ㄙㄨㄥ", definition: "形容心情不緊張，沒有壓力。", definitionPinyin: "ㄒㄧㄥˊ ㄖㄨㄥˊ ㄒㄧㄣ ㄑㄧㄥˊ ㄅㄨˋ ㄐㄧㄣˇ ㄓㄤ，ㄇㄟˊ ㄧㄡˇ ㄧㄚ ㄌㄧˋ。", sentence: "放學後，我覺得很輕鬆。", sentencePinyin: "ㄈㄤˋ ㄒㄩㄝˊ ㄏㄡˋ，ㄨㄛˇ ㄐㄩㄝˊ ㄉㄜ˙ ㄏㄣˇ ㄑㄧㄥ ㄙㄨㄥ。" },
+        { word: "緊張", pinyin: "ㄐㄧㄣˇ ㄓㄤ", definition: "形容心情很擔心，不自在。", definitionPinyin: "ㄒㄧㄥˊ ㄖㄨㄥˊ ㄒㄧㄣ ㄑㄧㄥˊ ㄏㄣˇ ㄉㄢ ㄒㄧㄣ，ㄅㄨˋ ㄗˋ ㄗㄞˋ。", sentence: "考試前，我感到很緊張。", sentencePinyin: "ㄎㄠˇ ㄕˋ ㄑㄧㄢˊ，ㄨㄛˇ ㄍㄢˇ ㄉㄠˋ ㄏㄣˇ ㄐㄧㄣˇ ㄓㄤ。" },
+        { word: "開心", pinyin: "ㄎㄞ ㄒㄧㄣ", definition: "形容心情很好、很高興。", definitionPinyin: "ㄒㄧㄥˊ ㄖㄨㄥˊ ㄒㄧㄣ ㄑㄧㄥˊ ㄏㄣˇ ㄏㄠˇ、ㄏㄣˇ ㄍㄠ ㄒㄧㄥˋ。", sentence: "收到禮物，我非常開心。", sentencePinyin: "ㄕㄡ ㄉㄠˋ ㄌㄧˇ ㄨˋ，ㄨㄛˇ ㄈㄟ ㄔㄤˊ ㄎㄞ ㄒㄧㄣ。" },
+        { word: "難過", pinyin: "ㄋㄢˊ ㄍㄨㄛˋ", definition: "形容心情不快樂，很想哭。", definitionPinyin: "ㄒㄧㄥˊ ㄖㄨㄥˊ ㄒㄧㄣ ㄑㄧㄥˊ ㄅㄨˋ ㄎㄨㄞˋ ㄌㄜˋ，ㄏㄣˇ ㄒㄧㄤˇ ㄎㄨ。", sentence: "看到小狗受傷，我感到很難過。", sentencePinyin: "ㄎㄢˋ ㄉㄠˋ ㄒㄧㄠˇ ㄍㄡˇ ㄕㄡˋ ㄕㄤ，ㄨㄛˇ ㄍㄢˇ ㄉㄠˋ ㄏㄣˇ ㄋㄢˊ ㄍㄨㄛˋ。" },
+        { word: "清澈", pinyin: "ㄑㄧㄥ ㄔㄜˋ", definition: "形容水很乾淨、很透明。", definitionPinyin: "ㄒㄧㄥˊ ㄖㄨㄥˊ ㄕㄨㄟˇ ㄏㄣˇ ㄍㄢ ㄐㄧㄥˋ、ㄏㄣˇ ㄊㄡˋ ㄇㄧㄥˊ。", sentence: "溪水清澈見底。", sentencePinyin: "ㄒㄧ ㄕㄨㄟˇ ㄑㄧㄥ ㄔㄜˋ ㄐㄧㄢˋ ㄉㄧˇ。" },
+        { word: "混濁", pinyin: "ㄏㄨㄣˋ ㄓㄨㄛˊ", definition: "形容水很髒，看起來不清楚。", definitionPinyin: "ㄒㄧㄥˊ ㄖㄨㄥˊ ㄕㄨㄟˇ ㄏㄣˇ ㄗㄤ，ㄎㄢˋ ㄑㄧˇ ㄌㄞˊ ㄅㄨˋ ㄑㄧㄥ ㄔㄨˇ。", sentence: "下雨後，河水變得混濁。", sentencePinyin: "ㄒㄧㄚˋ ㄩˇ ㄏㄡˋ，ㄏㄜˊ ㄕㄨㄟˇ ㄅㄧㄢˋ ㄉㄜ˙ ㄏㄨㄣˋ ㄓㄨㄛˊ。" },
+        { word: "柔軟", pinyin: "ㄖㄡˊ ㄖㄨㄢˇ", definition: "形容東西摸起來很軟。", definitionPinyin: "ㄒㄧㄥˊ ㄖㄨㄥˊ ㄉㄨㄥ ㄒㄧ ㄇㄛ ㄑㄧˇ ㄌㄞˊ ㄏㄣˇ ㄖㄨㄢˇ。", sentence: "這塊棉花糖很柔軟。", sentencePinyin: "ㄓㄜˋ ㄎㄨㄞˋ ㄇㄧㄢˊ ㄏㄨㄚ ㄊㄤˊ ㄏㄣˇ ㄖㄡˊ ㄖㄨㄢˇ。" },
+        { word: "堅硬", pinyin: "ㄐㄧㄢ ㄧㄥˋ", definition: "形容東西很硬，不容易變形。", definitionPinyin: "ㄒㄧㄥˊ ㄖㄨㄥˊ ㄉㄨㄥ ㄒㄧ ㄏㄣˇ ㄧㄥˋ，ㄅㄨˋ ㄖㄨㄥˊ ㄧˋ ㄅㄧㄢˋ ㄒㄧㄥˊ。", sentence: "這塊石頭非常堅硬。", sentencePinyin: "ㄓㄜˋ ㄎㄨㄞˋ ㄕˊ ㄊㄡˊ ㄈㄟ ㄔㄤˊ ㄐㄧㄢ ㄧㄥˋ。" },
+        { word: "明亮", pinyin: "ㄇㄧㄥˊ ㄌㄧㄤˋ", definition: "形容光線很充足。", definitionPinyin: "ㄒㄧㄥˊ ㄖㄨㄥˊ ㄍㄨㄤ ㄒㄧㄢˋ ㄏㄣˇ ㄘㄨㄥˊ ㄓㄨˊ。", sentence: "這盞燈很明亮。", sentencePinyin: "ㄓㄜˋ ㄓㄢˇ ㄉㄥ ㄏㄣˇ ㄇㄧㄥˊ ㄌㄧㄤˋ。" },
+        { word: "昏暗", pinyin: "ㄏㄨㄣ ㄢˋ", definition: "形容光線很暗，看不清楚。", definitionPinyin: "ㄒㄧㄥˊ ㄖㄨㄥˊ ㄍㄨㄤ ㄒㄧㄢˋ ㄏㄣˇ ㄢˋ，ㄎㄢˋ ㄅㄨˋ ㄑㄧㄥ ㄔㄨˇ。", sentence: "房間裡很昏暗。", sentencePinyin: "ㄈㄤˊ ㄐㄧㄢ ㄌㄧˇ ㄏㄣˇ ㄏㄨㄣ ㄢˋ。" },
+        { word: "豐富", pinyin: "ㄈㄥ ㄈㄨˋ", definition: "形容東西或內容很多。", definitionPinyin: "ㄒㄧㄥˊ ㄖㄨㄥˊ ㄉㄨㄥ ㄒㄧ ㄏㄨㄛˋ ㄋㄟˋ ㄖㄨㄥˊ ㄏㄣˇ ㄉㄨㄛ。", sentence: "這本書的知識很豐富。", sentencePinyin: "ㄓㄜˋ ㄅㄣˇ ㄕㄨ ㄉㄜ˙ ㄓ ㄕˋ ㄏㄣˇ ㄈㄥ ㄈㄨˋ。" },
+        { word: "貧乏", pinyin: "ㄆㄧㄣˊ ㄈㄚˊ", definition: "形容東西很少，不夠用。", definitionPinyin: "ㄒㄧㄥˊ ㄖㄨㄥˊ ㄉㄨㄥ ㄒㄧ ㄏㄣˇ ㄕㄠˇ，ㄅㄨˋ ㄍㄡˋ ㄩㄥˋ。", sentence: "這塊土地很貧乏，長不出東西。", sentencePinyin: "ㄓㄜˋ ㄎㄨㄞˋ ㄊㄨˇ ㄉㄧˋ ㄏㄣˇ ㄆㄧㄣˊ ㄈㄚˊ，ㄓㄤˇ ㄅㄨˋ ㄔㄨ ㄉㄨㄥ ㄒㄧ。" },
+        { word: "善良", pinyin: "ㄕㄢˋ ㄌㄧㄤˊ", definition: "形容人心地很好，對人親切。", definitionPinyin: "ㄒㄧㄥˊ ㄖㄨㄥˊ ㄖㄣˊ ㄒㄧㄣ ㄉㄧˋ ㄏㄣˇ ㄏㄠˇ，ㄉㄨㄟˋ ㄖㄣˊ ㄑㄧㄣ ㄑㄧㄝˋ。", sentence: "他是一個善良的人。", sentencePinyin: "ㄊㄚ ㄕˋ ㄧ ㄍㄜˋ ㄕㄢˋ ㄌㄧㄤˊ ㄉㄜ˙ ㄖㄣˊ。" },
+        { word: "兇惡", pinyin: "ㄒㄩㄥ ㄜˋ", definition: "形容人或動物很可怕，會欺負別人。", definitionPinyin: "ㄒㄧㄥˊ ㄖㄨㄥˊ ㄖㄣˊ ㄏㄨㄛˋ ㄉㄨㄥˋ ㄨˋ ㄏㄣˇ ㄎㄜˇ ㄆㄚˋ，ㄏㄨㄟˋ ㄑㄧ ㄈㄨˋ ㄅㄧㄝˊ ㄖㄣˊ。", sentence: "這隻老虎看起來很兇惡。", sentencePinyin: "ㄓㄜˋ ㄓ ㄌㄠˇ ㄏㄨˇ ㄎㄢˋ ㄑㄧˇ ㄌㄞˊ ㄏㄣˇ ㄒㄩㄥ ㄜˋ。" },
+        { word: "特別", pinyin: "ㄊㄜˋ ㄅㄧㄝˊ", definition: "形容跟別人不一樣。", definitionPinyin: "ㄒㄧㄥˊ ㄖㄨㄥˊ ㄍㄣ ㄅㄧㄝˊ ㄖㄣˊ ㄅㄨˋ ㄧㄤˋ。", sentence: "這朵花長得很特別。", sentencePinyin: "ㄓㄜˋ ㄉㄨㄛˇ ㄏㄨㄚ ㄓㄤˇ ㄉㄜ˙ ㄏㄣˇ ㄊㄜˋ ㄅㄧㄝˊ。" },
+        { word: "普通", pinyin: "ㄆㄨˇ ㄊㄨㄥ", definition: "形容很常見，沒有什麼不一樣。", definitionPinyin: "ㄒㄧㄥˊ ㄖㄨㄥˊ ㄏㄣˇ ㄔㄤˊ ㄐㄧㄢˋ，ㄇㄟˊ ㄧㄡˇ ㄕㄣˊ ㄇㄜ˙ ㄅㄨˋ ㄧㄤˋ。", sentence: "他是一個很普通的學生。", sentencePinyin: "ㄊㄚ ㄕˋ ㄧ ㄍㄜˋ ㄏㄣˇ ㄆㄨˇ ㄊㄨㄥ ㄉㄜ˙ ㄒㄩㄝˊ ㄕㄥ。" },
+        { word: "寬大", pinyin: "ㄎㄨㄢ ㄉㄚˋ", definition: "形容空間很大。", definitionPinyin: "ㄒㄧㄥˊ ㄖㄨㄥˊ ㄎㄨㄥ ㄐㄧㄢ ㄏㄣˇ ㄉㄚˋ。", sentence: "這間客廳很寬大。", sentencePinyin: "ㄓㄜˋ ㄐㄧㄢ ㄎㄜˋ ㄊㄧㄥ ㄏㄣˇ ㄎㄨㄢ ㄉㄚˋ。" },
+        { word: "狹窄", pinyin: "ㄒㄧㄚˊ ㄓㄞˇ", definition: "形容空間很小，很擠。", definitionPinyin: "ㄒㄧㄥˊ ㄖㄨㄥˊ ㄎㄨㄥ ㄐㄧㄢ ㄏㄣˇ ㄒㄧㄠˇ，ㄏㄣˇ ㄐㄧˇ。", sentence: "這條巷子很狹窄。", sentencePinyin: "ㄓㄜˋ ㄊㄧㄠˊ ㄒㄧㄤˋ ㄗ˙ ㄏㄣˇ ㄒㄧㄚˊ ㄓㄞˇ。" },
+        { word: "安靜", pinyin: "ㄢ ㄐㄧㄥˋ", definition: "形容沒有聲音。", definitionPinyin: "ㄒㄧㄥˊ ㄖㄨㄥˊ ㄇㄟˊ ㄧㄡˇ ㄕㄥ ㄧㄣ。", sentence: "圖書館裡非常安靜。", sentencePinyin: "ㄊㄨˊ ㄕㄨ ㄍㄨㄢˇ ㄌㄧˇ ㄈㄟ ㄔㄤˊ ㄢ ㄐㄧㄥˋ。" },
+        { word: "吵鬧", pinyin: "ㄔㄠˇ ㄋㄠˋ", definition: "形容聲音很多，很吵。", definitionPinyin: "ㄒㄧㄥˊ ㄖㄨㄥˊ ㄕㄥ ㄧㄣ ㄏㄣˇ ㄉㄨㄛ，ㄏㄣˇ ㄔㄠˇ。", sentence: "下課時，教室裡很吵鬧。", sentencePinyin: "ㄒㄧㄚˋ ㄎㄜˋ ㄕˊ，ㄐㄧㄠˋ ㄕˋ ㄌㄧˇ ㄏㄣˇ ㄔㄠˇ ㄋㄠˋ。" },
+        { word: "認真", pinyin: "ㄖㄣˋ ㄓㄣ", definition: "形容做事很專心，不馬虎。", definitionPinyin: "ㄒㄧㄥˊ ㄖㄨㄥˊ ㄗㄨㄛˋ ㄕˋ ㄏㄣˇ ㄓㄨㄢ ㄒㄧㄣ，ㄅㄨˋ ㄇㄚˇ ㄏㄨˊ。", sentence: "他很認真地寫作業。", sentencePinyin: "ㄊㄚ ㄏㄣˇ ㄖㄣˋ ㄓㄣ ㄉㄜ˙ ㄒㄧㄝˇ ㄗㄨㄛˋ ㄧㄝˋ。" },
+        { word: "馬虎", pinyin: "ㄇㄚˇ ㄏㄨˊ", definition: "形容做事不仔細，隨隨便便。", definitionPinyin: "ㄒㄧㄥˊ ㄖㄨㄥˊ ㄗㄨㄛˋ ㄕˋ ㄅㄨˋ ㄗㄞˇ ㄒㄧˋ，ㄙㄨㄟˊ ㄙㄨㄟˊ ㄅㄧㄢˋ ㄅㄧㄢˋ。", sentence: "他寫字很馬虎。", sentencePinyin: "ㄊㄚ ㄒㄧㄝˇ ㄗˋ ㄏㄣˇ ㄇㄚˇ ㄏㄨˊ。" },
+        { word: "勇敢", pinyin: "ㄩㄥˇ ㄍㄢˇ", definition: "形容有勇氣，不怕危險。", definitionPinyin: "ㄒㄧㄥˊ ㄖㄨㄥˊ ㄧㄡˇ ㄩㄥˇ ㄑㄧˋ，ㄅㄨˋ ㄆㄚˋ ㄨㄟˊ ㄒㄧㄢˇ。", sentence: "消防員很勇敢，進入火場救人。", sentencePinyin: "ㄒㄧㄠ ㄈㄤˊ ㄩㄢˊ ㄏㄣˇ ㄩㄥˇ ㄍㄢˇ，ㄐㄧㄣˋ ㄖㄨˋ ㄏㄨㄛˇ ㄔㄤˇ ㄐㄧㄡˋ ㄖㄣˊ。" },
+        { word: "膽小", pinyin: "ㄉㄢˇ ㄒㄧㄠˇ", definition: "形容沒有膽量，很容易害怕。", definitionPinyin: "ㄒㄧㄥˊ ㄖㄨㄥˊ ㄇㄟˊ ㄧㄡˇ ㄉㄢˇ ㄌㄧㄤˋ，ㄏㄣˇ ㄖㄨㄥˊ ㄧˋ ㄏㄞˋ ㄆㄚˋ。", sentence: "他膽子很小，不敢一個人回家。", sentencePinyin: "ㄊㄚ ㄉㄢˇ ㄗ˙ ㄏㄣˇ ㄒㄧㄠˇ，ㄅㄨˋ ㄍㄢˇ ㄧ ㄍㄜ˙ ㄖㄣˊ ㄏㄨㄟˊ ㄐㄧㄚ。" },
+        { word: "謙虛", pinyin: "ㄑㄧㄢ ㄒㄩ", definition: "形容不驕傲，能接受別人的意見。", definitionPinyin: "ㄒㄧㄥˊ ㄖㄨㄥˊ ㄅㄨˋ ㄐㄧㄠ ㄠˋ，ㄋㄥˊ ㄐㄧㄝ ㄕㄡˋ ㄅㄧㄝˊ ㄖㄣˊ ㄉㄜ˙ ㄧˋ ㄐㄧㄢˋ。", sentence: "他雖然很厲害，但很謙虛。", sentencePinyin: "ㄊㄚ ㄙㄨㄟ ㄖㄢˊ ㄏㄣˇ ㄌㄧˋ ㄏㄞˋ，ㄉㄢˋ ㄏㄣˇ ㄑㄧㄢ ㄒㄩ。" },
+        { word: "驕傲", pinyin: "ㄐㄧㄠ ㄠˋ", definition: "形容覺得自己很了不起，看不起別人。", definitionPinyin: "ㄒㄧㄥˊ ㄖㄨㄥˊ ㄐㄩㄝˊ ㄉㄜ˙ ㄗˋ ㄐㄧˇ ㄏㄣˇ ㄌㄧㄠˇ ㄅㄨˋ ㄑㄧˇ，ㄎㄢˋ ㄅㄨˋ ㄑㄧˇ ㄅㄧㄝˊ ㄖㄣˊ。", sentence: "他因為考試第一名而感到驕傲。", sentencePinyin: "ㄊㄚ ㄧㄣ ㄨㄟˋ ㄎㄠˇ ㄕˋ ㄉㄧˋ ㄧ ㄇㄧㄥˊ ㄦˊ ㄍㄢˇ ㄉㄠˋ ㄐㄧㄠ ㄠˋ。" },
+        { word: "精彩", pinyin: "ㄐㄧㄥ ㄘㄞˇ", definition: "形容表演或活動內容非常出色。", definitionPinyin: "ㄒㄧㄥˊ ㄖㄨㄥˊ ㄅㄧㄠˇ ㄧㄢˇ ㄏㄨㄛˋ ㄏㄨㄛˊ ㄉㄨㄥˋ ㄋㄟˋ ㄖㄨㄥˊ ㄈㄟ ㄔㄤˊ ㄔㄨ ㄙㄜˋ。", sentence: "這場電影非常精彩。", sentencePinyin: "ㄓㄜˋ ㄔㄤˇ ㄉㄧㄢˋ ㄧㄥˇ ㄈㄟ ㄔㄤˊ ㄐㄧㄥ ㄘㄞˇ。" },
+        { word: "無聊", pinyin: "ㄨˊ ㄌㄧㄠˊ", definition: "形容沒有事情做，讓人覺得很悶。", definitionPinyin: "ㄒㄧㄥˊ ㄖㄨㄥˊ ㄇㄟˊ ㄧㄡˇ ㄕˋ ㄑㄧㄥˊ ㄗㄨㄛˋ，ㄖㄤˋ ㄖㄣˊ ㄐㄩㄝˊ ㄉㄜ˙ ㄏㄣˇ ㄇㄣˋ。", sentence: "這個電視節目很無聊。", sentencePinyin: "ㄓㄜˋ ㄍㄜˋ ㄉㄧㄢˋ ㄕˋ ㄐㄧㄝˊ ㄇㄨˋ ㄏㄣˇ ㄨˊ ㄌㄧㄠˊ。" },
+        { word: "善良", pinyin: "ㄕㄢˋ ㄌㄧㄤˊ", definition: "形容人心地好，很體貼別人。", definitionPinyin: "ㄒㄧㄥˊ ㄖㄨㄥˊ ㄖㄣˊ ㄒㄧㄣ ㄉㄧˋ ㄏㄠˇ，ㄏㄣˇ ㄊㄧˇ ㄊㄧㄝ ㄅㄧㄝˊ ㄖㄣˊ。", sentence: "她很善良，常常幫助流浪狗。", sentencePinyin: "ㄊㄚ ㄏㄣˇ ㄕㄢˋ ㄌㄧㄤˊ，ㄔㄤˊ ㄔㄤˊ ㄅㄤ ㄓㄨˋ ㄌㄧㄡˊ ㄌㄤˋ ㄍㄡˇ。" },
+        { word: "正直", pinyin: "ㄓㄥˋ ㄓˊ", definition: "形容人很誠實，不會做壞事。", definitionPinyin: "ㄒㄧㄥˊ ㄖㄨㄥˊ ㄖㄣˊ ㄏㄣˇ ㄔㄥˊ ㄕˊ，ㄅㄨˋ ㄏㄨㄟˋ ㄗㄨㄛˋ ㄏㄨㄞˋ ㄕˋ。", sentence: "他是一個正直的人。", sentencePinyin: "ㄊㄚ ㄕˋ ㄧ ㄍㄜˋ ㄓㄥˋ ㄓˊ ㄉㄜ˙ ㄖㄣˊ。" },
+        { word: "清澈", pinyin: "ㄑㄧㄥ ㄔㄜˋ", definition: "形容水或空氣很乾淨。", definitionPinyin: "ㄒㄧㄥˊ ㄖㄨㄥˊ ㄕㄨㄟˇ ㄏㄨㄛˋ ㄎㄨㄥ ㄑㄧˋ ㄏㄣˇ ㄍㄢ ㄐㄧㄥˋ。", sentence: "這裡的湖水很清澈。", sentencePinyin: "ㄓㄜˋ ㄌㄧˇ ㄉㄜ˙ ㄏㄨˊ ㄕㄨㄟˇ ㄏㄣˇ ㄑㄧㄥ ㄔㄜˋ。" },
+        { word: "香甜", pinyin: "ㄒㄧㄤ ㄊㄧㄢˊ", definition: "形容東西又香又甜。", definitionPinyin: "ㄒㄧㄥˊ ㄖㄨㄥˊ ㄉㄨㄥ ㄒㄧ ㄧㄡˋ ㄒㄧㄤ ㄧㄡˋ ㄊㄧㄢˊ。", sentence: "這顆草莓又紅又香甜。", sentencePinyin: "ㄓㄜˋ ㄎㄜ ㄘㄠˇ ㄇㄟˊ ㄧㄡˋ ㄏㄨㄥˊ ㄧㄡˋ ㄒㄧㄤ ㄊㄧㄢˊ。" },
+        { word: "辛辣", pinyin: "ㄒㄧㄣ ㄌㄚˋ", definition: "形容味道很辣，會讓人覺得刺激。", definitionPinyin: "ㄒㄧㄥˊ ㄖㄨㄥˊ ㄨㄟˋ ㄉㄠˋ ㄏㄣˇ ㄌㄚˋ，ㄏㄨㄟˋ ㄖㄤˋ ㄖㄣˊ ㄐㄩㄝˊ ㄉㄜ˙ ㄘˋ ㄐㄧ。", sentence: "這道菜的味道很辛辣。", sentencePinyin: "ㄓㄜˋ ㄉㄠˋ ㄘㄞˋ ㄉㄜ˙ ㄨㄟˋ ㄉㄠˋ ㄏㄣˇ ㄒㄧㄣ ㄌㄚˋ。" },
+        { word: "柔軟", pinyin: "ㄖㄡˊ ㄖㄨㄢˇ", definition: "形容東西不硬，摸起來很舒服。", definitionPinyin: "ㄒㄧㄥˊ ㄖㄨㄥˊ ㄉㄨㄥ ㄒㄧ ㄅㄨˋ ㄧㄥˋ，ㄇㄛ ㄑㄧˇ ㄌㄞˊ ㄏㄣˇ ㄕㄨ ㄈㄨˊ。", sentence: "這件毛衣很柔軟。", sentencePinyin: "ㄓㄜˋ ㄐㄧㄢˋ ㄇㄠˊ ㄧ ㄏㄣˇ ㄖㄡˊ ㄖㄨㄢˇ。" },
+        { word: "堅硬", pinyin: "ㄐㄧㄢ ㄧㄥˋ", definition: "形容東西很硬，不容易破壞。", definitionPinyin: "ㄒㄧㄥˊ ㄖㄨㄥˊ ㄉㄨㄥ ㄒㄧ ㄏㄣˇ ㄧㄥˋ，ㄅㄨˋ ㄖㄨㄥˊ ㄧˋ ㄆㄛˋ ㄏㄨㄞˋ。", sentence: "這塊岩石非常堅硬。", sentencePinyin: "ㄓㄜˋ ㄎㄨㄞˋ ㄧㄢˊ ㄕˊ ㄈㄟ ㄔㄤˊ ㄐㄧㄢ ㄧㄥˋ。" },
+        { word: "溫暖", pinyin: "ㄨㄣ ㄋㄨㄢˇ", definition: "形容天氣不冷，或讓人感覺很舒服。", definitionPinyin: "ㄒㄧㄥˊ ㄖㄨㄥˊ ㄊㄧㄢ ㄑㄧˋ ㄅㄨˋ ㄌㄥˇ，ㄏㄨㄛˋ ㄖㄤˋ ㄖㄣˊ ㄍㄢˇ ㄐㄩㄝˊ ㄏㄣˇ ㄕㄨ ㄈㄨˊ。", sentence: "冬天的太陽很溫暖。", sentencePinyin: "ㄉㄨㄥ ㄊㄧㄢ ㄉㄜ˙ ㄊㄞˋ ㄧㄤˊ ㄏㄣˇ ㄨㄣ ㄋㄨㄢˇ。" },
+        { word: "寒冷", pinyin: "ㄏㄢˊ ㄌㄥˇ", definition: "形容天氣很冷，讓人覺得發抖。", definitionPinyin: "ㄒㄧㄥˊ ㄖㄨㄥˊ ㄊㄧㄢ ㄑㄧˋ ㄏㄣˇ ㄌㄥˇ，ㄖㄤˋ ㄖㄣˊ ㄐㄩㄝˊ ㄉㄜ˙ ㄈㄚ ㄉㄡˇ。", sentence: "今天的天氣好寒冷。", sentencePinyin: "ㄐㄧㄣ ㄊㄧㄢ ㄉㄜ˙ ㄊㄧㄢ ㄑㄧˋ ㄏㄠˇ ㄏㄢˊ ㄌㄥˇ。" },
+        { word: "明亮", pinyin: "ㄇㄧㄥˊ ㄌㄧㄤˋ", definition: "形容光線很充足，很清楚。", definitionPinyin: "ㄒㄧㄥˊ ㄖㄨㄥˊ ㄍㄨㄤ ㄒㄧㄢˋ ㄏㄣˇ ㄘㄨㄥˊ ㄓㄨˊ，ㄏㄣˇ ㄑㄧㄥ ㄔㄨˇ。", sentence: "這間教室很明亮。", sentencePinyin: "ㄓㄜˋ ㄐㄧㄢ ㄐㄧㄠˋ ㄕˋ ㄏㄣˇ ㄇㄧㄥˊ ㄌㄧㄤˋ。" },
+        { word: "昏暗", pinyin: "ㄏㄨㄣ ㄢˋ", definition: "形容光線很暗，看不清楚。", definitionPinyin: "ㄒㄧㄥˊ ㄖㄨㄥˊ ㄍㄨㄤ ㄒㄧㄢˋ ㄏㄣˇ ㄢˋ，ㄎㄢˋ ㄅㄨˋ ㄑㄧㄥ ㄔㄨˇ。", sentence: "沒有燈的地方很昏暗。", sentencePinyin: "ㄇㄟˊ ㄧㄡˇ ㄉㄥ ㄉㄜ˙ ㄉㄧˋ ㄈㄤ ㄏㄣˇ ㄏㄨㄣ ㄢˋ。" },
+        { word: "簡單", pinyin: "ㄐㄧㄢˇ ㄉㄢ", definition: "形容事情不複雜，很容易做到。", definitionPinyin: "ㄒㄧㄥˊ ㄖㄨㄥˊ ㄕˋ ㄑㄧㄥˊ ㄅㄨˋ ㄈㄨˋ ㄗㄚˊ，ㄏㄣˇ ㄖㄨㄥˊ ㄧˋ ㄗㄨㄛˋ ㄉㄠˋ。", sentence: "這個問題很簡單。", sentencePinyin: "ㄓㄜˋ ㄍㄜˋ ㄨㄣˋ ㄊㄧˊ ㄏㄣˇ ㄐㄧㄢˇ ㄉㄢ。" },
+        { word: "複雜", pinyin: "ㄈㄨˋ ㄗㄚˊ", definition: "形容事情很難懂，有很多步驟。", definitionPinyin: "ㄒㄧㄥˊ ㄖㄨㄥˊ ㄕˋ ㄑㄧㄥˊ ㄏㄣˇ ㄋㄢˊ ㄉㄨㄥˇ，ㄧㄡˇ ㄏㄣˇ ㄉㄨㄛ ㄅㄨˋ ㄗㄡˋ。", sentence: "這個遊戲的規則很複雜。", sentencePinyin: "ㄓㄜˋ ㄍㄜˋ ㄧㄡˊ ㄒㄧˋ ㄉㄜ˙ ㄍㄨㄟ ㄗㄜˊ ㄏㄣˇ ㄈㄨˋ ㄗㄚˊ。" },
+        { word: "新鮮", pinyin: "ㄒㄧㄣ ㄒㄧㄢ", definition: "形容東西剛生產出來，沒有放很久。", definitionPinyin: "ㄒㄧㄥˊ ㄖㄨㄥˊ ㄉㄨㄥ ㄒㄧ ㄍㄤ ㄕㄥ ㄔㄢˇ ㄔㄨ ㄌㄞˊ，ㄇㄟˊ ㄧㄡˇ ㄈㄤˋ ㄏㄣˇ ㄐㄧㄡˇ。", sentence: "這條魚很新鮮。", sentencePinyin: "ㄓㄜˋ ㄊㄧㄠˊ ㄩˊ ㄏㄣˇ ㄒㄧㄣ ㄒㄧㄢ。" },
+        { word: "腐敗", pinyin: "ㄈㄨˇ ㄅㄞˋ", definition: "形容東西放太久，壞掉了。", definitionPinyin: "ㄒㄧㄥˊ ㄖㄨㄥˊ ㄉㄨㄥ ㄒㄧ ㄈㄤˋ ㄊㄞˋ ㄐㄧㄡˇ，ㄏㄨㄞˋ ㄉㄧㄠˋ ㄌㄜ˙。", sentence: "這顆水果已經腐敗了。", sentencePinyin: "ㄓㄜˋ ㄎㄜ ㄕㄨㄟˇ ㄍㄨㄛˇ ㄧˇ ㄐㄧㄥ ㄈㄨˇ ㄅㄞˋ ㄌㄜ˙。" },
+        { word: "勤勞", pinyin: "ㄑㄧㄣˊ ㄌㄠˊ", definition: "形容人很愛工作，很努力。", definitionPinyin: "ㄒㄧㄥˊ ㄖㄨㄥˊ ㄖㄣˊ ㄏㄣˇ ㄞˋ ㄍㄨㄥ ㄗㄨㄛˋ，ㄏㄣˇ ㄋㄨˇ ㄌㄧˋ。", sentence: "農夫們很勤勞，每天都下田工作。", sentencePinyin: "ㄋㄨㄥˊ ㄈㄨ ㄇㄣˊ ㄏㄣˇ ㄑㄧㄣˊ ㄌㄠˊ，ㄇㄟˇ ㄊㄧㄢ ㄉㄡ ㄒㄧㄚˋ ㄊㄧㄢˊ ㄍㄨㄥ ㄗㄨㄛˋ。" },
+        { word: "懶惰", pinyin: "ㄌㄢˇ ㄉㄨㄛˋ", definition: "形容人很愛休息，不喜歡做事。", definitionPinyin: "ㄒㄧㄥˊ ㄖㄨㄥˊ ㄖㄣˊ ㄏㄣˇ ㄞˋ ㄒㄧㄡ ㄒㄧˊ，ㄅㄨˋ ㄒㄧˇ ㄏㄨㄢ ㄗㄨㄛˋ ㄕˋ。", sentence: "他太懶惰了，都不想寫作業。", sentencePinyin: "ㄊㄚ ㄊㄞˋ ㄌㄢˇ ㄉㄨㄛˋ ㄌㄜ˙，ㄉㄡ ㄅㄨˋ ㄒㄧㄤˇ ㄒㄧㄝˇ ㄗㄨㄛˋ ㄧㄝˋ。" },
+        { word: "活潑", pinyin: "ㄏㄨㄛˊ ㄆㄛ", definition: "形容人很開朗，充滿活力。", definitionPinyin: "ㄒㄧㄥˊ ㄖㄨㄥˊ ㄖㄣˊ ㄏㄣˇ ㄎㄞ ㄌㄤˇ，ㄔㄨㄥ ㄇㄢˇ ㄏㄨㄛˊ ㄌㄧˋ。", sentence: "弟弟很活潑，喜歡跟人玩。", sentencePinyin: "ㄉㄧˋ ㄉㄧˋ ㄏㄣˇ ㄏㄨㄛˊ ㄆㄛ，ㄒㄧˇ ㄏㄨㄢ ㄍㄣ ㄖㄣˊ ㄨㄢˊ。" },
+        { word: "內向", pinyin: "ㄋㄟˋ ㄒㄧㄤˋ", definition: "形容人比較害羞，不喜歡跟別人說話。", definitionPinyin: "ㄒㄧㄥˊ ㄖㄨㄥˊ ㄖㄣˊ ㄅㄧˇ ㄐㄧㄠˋ ㄏㄞˋ ㄒㄧㄡ，ㄅㄨˋ ㄒㄧˇ ㄏㄨㄢ ㄍㄣ ㄅㄧㄝˊ ㄖㄣˊ ㄕㄨㄛ ㄏㄨㄚˋ。", sentence: "他是一個比較內向的人。", sentencePinyin: "ㄊㄚ ㄕˋ ㄧ ㄍㄜˋ ㄅㄧˇ ㄐㄧㄠˋ ㄋㄟˋ ㄒㄧㄤˋ ㄉㄜ˙ ㄖㄣˊ。" },
+        { word: "年輕", pinyin: "ㄋㄧㄢˊ ㄑㄧㄥ", definition: "形容年紀很小。", definitionPinyin: "ㄒㄧㄥˊ ㄖㄨㄥˊ ㄋㄧㄢˊ ㄐㄧˋ ㄏㄣˇ ㄒㄧㄠˇ。", sentence: "老師看起來很年輕。", sentencePinyin: "ㄌㄠˇ ㄕ ㄎㄢˋ ㄑㄧˇ ㄌㄞˊ ㄏㄣˇ ㄋㄧㄢˊ ㄑㄧㄥ。" },
+        { word: "年老", pinyin: "ㄋㄧㄢˊ ㄌㄠˇ", definition: "形容年紀很大。", definitionPinyin: "ㄒㄧㄥˊ ㄖㄨㄥˊ ㄋㄧㄢˊ ㄐㄧˋ ㄏㄣˇ ㄉㄚˋ。", sentence: "爺爺年老了，需要我們的照顧。", sentencePinyin: "ㄧㄝˊ ㄧㄝˊ ㄋㄧㄢˊ ㄌㄠˇ ㄌㄜ˙，ㄒㄩ ㄧㄠˋ ㄨㄛˇ ㄇㄣˊ ㄉㄜ˙ ㄓㄠˋ ㄍㄨˋ。" },
+        { word: "寬廣", pinyin: "ㄎㄨㄢ ㄍㄨㄤˇ", definition: "形容地方很大，很寬敞。", definitionPinyin: "ㄒㄧㄥˊ ㄖㄨㄥˊ ㄉㄧˋ ㄈㄤ ㄏㄣˇ ㄉㄚˋ，ㄏㄣˇ ㄎㄨㄢ ㄔㄤˇ。", sentence: "這條路很寬廣。", sentencePinyin: "ㄓㄜˋ ㄊㄧㄠˊ ㄌㄨˋ ㄏㄣˇ ㄎㄨㄢ ㄍㄨㄤˇ。" },
+        { word: "狹窄", pinyin: "ㄒㄧㄚˊ ㄓㄞˇ", definition: "形容地方很小，很難通過。", definitionPinyin: "ㄒㄧㄥˊ ㄖㄨㄥˊ ㄉㄧˋ ㄈㄤ ㄏㄣˇ ㄒㄧㄠˇ，ㄏㄣˇ ㄋㄢˊ ㄊㄨㄥ ㄍㄨㄛˋ。", sentence: "這條小巷很狹窄。", sentencePinyin: "ㄓㄜˋ ㄊㄧㄠˊ ㄒㄧㄠˇ ㄒㄧㄤˋ ㄏㄣˇ ㄒㄧㄚˊ ㄓㄞˇ。" },
+        { word: "整潔", pinyin: "ㄓㄥˇ ㄐㄧㄝˊ", definition: "形容乾淨又整齊。", definitionPinyin: "ㄒㄧㄥˊ ㄖㄨㄥˊ ㄍㄢ ㄐㄧㄥˋ ㄧㄡˋ ㄓㄥˇ ㄑㄧˊ。", sentence: "他的房間總是保持整潔。", sentencePinyin: "ㄊㄚ ㄉㄜ˙ ㄈㄤˊ ㄐㄧㄢ ㄗㄨㄥˇ ㄕˋ ㄅㄠˇ ㄔˊ ㄓㄥˇ ㄐㄧㄝˊ。" },
+        { word: "髒亂", pinyin: "ㄗㄤ ㄌㄨㄢˋ", definition: "形容又髒又亂。", definitionPinyin: "ㄒㄧㄥˊ ㄖㄨㄥˊ ㄧㄡˋ ㄗㄤ ㄧㄡˋ ㄌㄨㄢˋ。", sentence: "這堆東西堆得很髒亂。", sentencePinyin: "ㄓㄜˋ ㄉㄨㄟ ㄉㄨㄥ ㄒㄧ ㄉㄨㄟ ㄉㄜ˙ ㄏㄣˇ ㄗㄤ ㄌㄨㄢˋ。" },
+        { word: "親切", pinyin: "ㄑㄧㄣ ㄑㄧㄝˋ", definition: "形容人很和善，待人很好。", definitionPinyin: "ㄒㄧㄥˊ ㄖㄨㄥˊ ㄖㄣˊ ㄏㄣˇ ㄏㄜˊ ㄕㄢˋ，ㄉㄞˋ ㄖㄣˊ ㄏㄣˇ ㄏㄠˇ。", sentence: "那位阿姨很親切，常常請我們吃糖果。", sentencePinyin: "ㄋㄚˋ ㄨㄟˋ ㄚ ㄧˊ ㄏㄣˇ ㄑㄧㄣ ㄑㄧㄝˋ，ㄔㄤˊ ㄔㄤˊ ㄑㄧㄥˇ ㄨㄛˇ ㄇㄣˊ ㄔ ㄊㄤˊ ㄍㄨㄛˇ。" },
+        { word: "誠實", pinyin: "ㄔㄥˊ ㄕˊ", definition: "形容人不會說謊。", definitionPinyin: "ㄒㄧㄥˊ ㄖㄨㄥˊ ㄖㄣˊ ㄅㄨˋ ㄏㄨㄟˋ ㄕㄨㄛ ㄏㄨㄤˇ。", sentence: "他是個誠實的孩子，從不說謊。", sentencePinyin: "ㄊㄚ ㄕˋ ㄍㄜˋ ㄔㄥˊ ㄕˊ ㄉㄜ˙ ㄏㄞˊ ㄗ˙，ㄘㄨㄥˊ ㄅㄨˋ ㄕㄨㄛ ㄏㄨㄤˇ。" },
+        { word: "善良", pinyin: "ㄕㄢˋ ㄌㄧㄤˊ", definition: "形容人心地很好，總是會幫助別人。", definitionPinyin: "ㄒㄧㄥˊ ㄖㄨㄥˊ ㄖㄣˊ ㄒㄧㄣ ㄉㄧˋ ㄏㄣˇ ㄏㄠˇ，ㄗㄨㄥˇ ㄕˋ ㄏㄨㄟˋ ㄅㄤ ㄓㄨˋ ㄅㄧㄝˊ ㄖㄣˊ。", sentence: "她是個善良的女孩。", sentencePinyin: "ㄊㄚ ㄕˋ ㄍㄜˋ ㄕㄢˋ ㄌㄧㄤˊ ㄉㄜ˙ ㄋㄩˇ ㄏㄞˊ。" },
+        { word: "正直", pinyin: "ㄓㄥˋ ㄓˊ", definition: "形容人很公正，不偏向任何一方。", definitionPinyin: "ㄒㄧㄥˊ ㄖㄨㄥˊ ㄖㄣˊ ㄏㄣˇ ㄍㄨㄥ ㄓㄥˋ，ㄅㄨˋ ㄆㄧㄢ ㄒㄧㄤˋ ㄖㄣˋ ㄏㄜˊ ㄧ ㄈㄤ。", sentence: "法官必須正直。", sentencePinyin: "ㄈㄚˇ ㄍㄨㄢ ㄅㄧˋ ㄒㄩ ㄓㄥˋ ㄓˊ。" },
+        { word: "平坦", pinyin: "ㄆㄧㄥˊ ㄊㄢˇ", definition: "形容地方很平，沒有高低起伏。", definitionPinyin: "ㄒㄧㄥˊ ㄖㄨㄥˊ ㄉㄧˋ ㄈㄤ ㄏㄣˇ ㄆㄧㄥˊ，ㄇㄟˊ ㄧㄡˇ ㄍㄠ ㄉㄧ ㄑㄧˇ ㄈㄨˊ。", sentence: "這條路很平坦。", sentencePinyin: "ㄓㄜˋ ㄊㄧㄠˊ ㄌㄨˋ ㄏㄣˇ ㄆㄧㄥˊ ㄊㄢˇ。" },
+        { word: "崎嶇", pinyin: "ㄑㄧˊ ㄑㄩ", definition: "形容路很不平，很難走。", definitionPinyin: "ㄒㄧㄥˊ ㄖㄨㄥˊ ㄌㄨˋ ㄏㄣˇ ㄅㄨˋ ㄆㄧㄥˊ，ㄏㄣˇ ㄋㄢˊ ㄗㄡˇ。", sentence: "這條山路很崎嶇。", sentencePinyin: "ㄓㄜˋ ㄊㄧㄠˊ ㄕㄢ ㄌㄨˋ ㄏㄣˇ ㄑㄧˊ ㄑㄩ。" },
+        { word: "寬闊", pinyin: "ㄎㄨㄢ ㄎㄨㄛˋ", definition: "形容地方很寬，範圍很大。", definitionPinyin: "ㄒㄧㄥˊ ㄖㄨㄥˊ ㄉㄧˋ ㄈㄤ ㄏㄣˇ ㄎㄨㄢ，ㄈㄢˊ ㄨㄟˊ ㄏㄣˇ ㄉㄚˋ。", sentence: "這片草原非常寬闊。", sentencePinyin: "ㄓㄜˋ ㄆㄧㄢˋ ㄘㄠˇ ㄩㄢˊ ㄈㄟ ㄔㄤˊ ㄎㄨㄢ ㄎㄨㄛˋ。" },
+        { word: "巨大", pinyin: "ㄐㄩˋ ㄉㄚˋ", definition: "形容東西非常大，超過一般大小。", definitionPinyin: "ㄒㄧㄥˊ ㄖㄨㄥˊ ㄉㄨㄥ ㄒㄧ ㄈㄟ ㄔㄤˊ ㄉㄚˋ，ㄔㄠ ㄍㄨㄛˋ ㄧ ㄅㄢ ㄉㄚˋ ㄒㄧㄠˇ。", sentence: "海洋裡有巨大的鯨魚。", sentencePinyin: "ㄏㄞˇ ㄧㄤˊ ㄌㄧˇ ㄧㄡˇ ㄐㄩˋ ㄉㄚˋ ㄉㄜ˙ ㄐㄧㄥ ㄩˊ。" },
+        { word: "潔白", pinyin: "ㄐㄧㄝˊ ㄅㄞˊ", definition: "形容東西很乾淨，像雪一樣白。", definitionPinyin: "ㄒㄧㄥˊ ㄖㄨㄥˊ ㄉㄨㄥ ㄒㄧ ㄏㄣˇ ㄍㄢ ㄐㄧㄥˋ，ㄒㄧㄤˋ ㄒㄩㄝˇ ㄧ ㄧㄤˋ ㄅㄞˊ。", sentence: "天上的白雲潔白無瑕。", sentencePinyin: "ㄊㄧㄢ ㄕㄤˋ ㄉㄜ˙ ㄅㄞˊ ㄩㄣˊ ㄐㄧㄝˊ ㄅㄞˊ ㄨˊ ㄒㄧㄚˊ。" },
+        { word: "漆黑", pinyin: "ㄑㄧ ㄏㄟ", definition: "形容東西很黑，完全沒有光線。", definitionPinyin: "ㄒㄧㄥˊ ㄖㄨㄥˊ ㄉㄨㄥ ㄒㄧ ㄏㄣˇ ㄏㄟ，ㄨㄢˊ ㄑㄩㄢˊ ㄇㄟˊ ㄧㄡˇ ㄍㄨㄤ ㄒㄧㄢˋ。", sentence: "夜晚的森林一片漆黑。", sentencePinyin: "ㄧㄝˋ ㄨㄢˇ ㄉㄜ˙ ㄙㄣ ㄌㄧㄣˊ ㄧ ㄆㄧㄢˋ ㄑㄧ ㄏㄟ。" },
+        { word: "美麗", pinyin: "ㄇㄟˇ ㄌㄧˋ", definition: "形容人或風景很美。", definitionPinyin: "ㄒㄧㄥˊ ㄖㄨㄥˊ ㄖㄣˊ ㄏㄨㄛˋ ㄈㄥ ㄐㄧㄥˇ ㄏㄣˇ ㄇㄟˇ。", sentence: "這座城市非常美麗。", sentencePinyin: "ㄓㄜˋ ㄗㄨㄛˋ ㄔㄥˊ ㄕˋ ㄈㄟ ㄔㄤˊ ㄇㄟˇ ㄌㄧˋ。" },
+        { word: "醜陋", pinyin: "ㄔㄡˇ ㄌㄡˋ", definition: "形容人或東西長得不好看。", definitionPinyin: "ㄒㄧㄥˊ ㄖㄨㄥˊ ㄖㄣˊ ㄏㄨㄛˋ ㄉㄨㄥ ㄒㄧ ㄓㄤˇ ㄉㄜ˙ ㄅㄨˋ ㄏㄠˇ ㄎㄢˋ。", sentence: "他是一個長得很醜陋的怪獸。", sentencePinyin: "ㄊㄚ ㄕˋ ㄧ ㄍㄜˋ ㄓㄤˇ ㄉㄜ˙ ㄏㄣˇ ㄔㄡˇ ㄌㄡˋ ㄉㄜ˙ ㄍㄨㄞˋ ㄕㄡˋ。" },
+        { word: "新鮮", pinyin: "ㄒㄧㄣ ㄒㄧㄢ", definition: "形容東西是剛做出來或拿到的，沒有變質。", definitionPinyin: "ㄒㄧㄥˊ ㄖㄨㄥˊ ㄉㄨㄥ ㄒㄧ ㄕˋ ㄍㄤ ㄗㄨㄛˋ ㄔㄨ ㄌㄞˊ ㄏㄨㄛˋ ㄋㄚˊ ㄉㄠˋ ㄉㄜ˙，ㄇㄟˊ ㄧㄡˇ ㄅㄧㄢˋ ㄓˊ。", sentence: "這條魚很新鮮。", sentencePinyin: "ㄓㄜˋ ㄊㄧㄠˊ ㄩˊ ㄏㄣˇ ㄒㄧㄣ ㄒㄧㄢ。" },
+        { word: "陳舊", pinyin: "ㄔㄣˊ ㄐㄧㄡˋ", definition: "形容東西放了很久，已經變舊了。", definitionPinyin: "ㄒㄧㄥˊ ㄖㄨㄥˊ ㄉㄨㄥ ㄒㄧ ㄈㄤˋ ㄌㄜ˙ ㄏㄣˇ ㄐㄧㄡˇ，ㄧˇ ㄐㄧㄥ ㄅㄧㄢˋ ㄐㄧㄡˋ ㄌㄜ˙。", sentence: "這件衣服很陳舊。", sentencePinyin: "ㄓㄜˋ ㄐㄧㄢˋ ㄧ ㄈㄨˊ ㄏㄣˇ ㄔㄣˊ ㄐㄧㄡˋ。" },
+        { word: "熱情", pinyin: "ㄖㄜˋ ㄑㄧㄥˊ", definition: "形容人很喜歡幫助別人，對人很熱絡。", definitionPinyin: "ㄒㄧㄥˊ ㄖㄨㄥˊ ㄖㄣˊ ㄏㄣˇ ㄒㄧˇ ㄏㄨㄢ ㄅㄤ ㄓㄨˋ ㄅㄧㄝˊ ㄖㄣˊ，ㄉㄨㄟˋ ㄖㄣˊ ㄏㄣˇ ㄖㄜˋ ㄌㄨㄛˋ。", sentence: "他是一個熱情的朋友。", sentencePinyin: "ㄊㄚ ㄕˋ ㄧ ㄍㄜˋ ㄖㄜˋ ㄑㄧㄥˊ ㄉㄜ˙ ㄆㄥˊ ㄧㄡˇ。" },
+        { word: "冷淡", pinyin: "ㄌㄥˇ ㄉㄢˋ", definition: "形容人對別人沒有反應，不理人。", definitionPinyin: "ㄒㄧㄥˊ ㄖㄨㄥˊ ㄖㄣˊ ㄉㄨㄟˋ ㄅㄧㄝˊ ㄖㄣˊ ㄇㄟˊ ㄧㄡˇ ㄈㄢˇ ㄧㄥˋ，ㄅㄨˋ ㄌㄧˇ ㄖㄣˊ。", sentence: "他對待人很冷淡。", sentencePinyin: "ㄊㄚ ㄉㄨㄟˋ ㄉㄞˋ ㄖㄣˊ ㄏㄣˇ ㄌㄥˇ ㄉㄢˋ。" },
+        { word: "活潑", pinyin: "ㄏㄨㄛˊ ㄆㄛ", definition: "形容人很開朗，充滿了生命力。", definitionPinyin: "ㄒㄧㄥˊ ㄖㄨㄥˊ ㄖㄣˊ ㄏㄣˇ ㄎㄞ ㄌㄤˇ，ㄔㄨㄥ ㄇㄢˇ ㄌㄜ˙ ㄕㄥ ㄇㄧㄥˋ ㄌㄧˋ。", sentence: "這個班級的學生都很活潑。", sentencePinyin: "ㄓㄜˋ ㄍㄜˋ ㄅㄢ ㄐㄧˊ ㄉㄜ˙ ㄒㄩㄝˊ ㄕㄥ ㄉㄡ ㄏㄣˇ ㄏㄨㄛˊ ㄆㄛ。" },
+        { word: "沉悶", pinyin: "ㄔㄣˊ ㄇㄣˋ", definition: "形容氣氛很無聊，讓人覺得不舒服。", definitionPinyin: "ㄒㄧㄥˊ ㄖㄨㄥˊ ㄑㄧˋ ㄈㄣ ㄏㄣˇ ㄨˊ ㄌㄧㄠˊ，ㄖㄤˋ ㄖㄣˊ ㄐㄩㄝˊ ㄉㄜ˙ ㄅㄨˋ ㄕㄨ ㄈㄨˊ。", sentence: "會議的氣氛很沉悶。", sentencePinyin: "ㄏㄨㄟˋ ㄧˋ ㄉㄜ˙ ㄑㄧˋ ㄈㄣ ㄏㄣˇ ㄔㄣˊ ㄇㄣˋ。" },
+        { word: "優秀", pinyin: "ㄧㄡ ㄒㄧㄡˋ", definition: "形容人很厲害，比別人做得更好。", definitionPinyin: "ㄒㄧㄥˊ ㄖㄨㄥˊ ㄖㄣˊ ㄏㄣˇ ㄌㄧˋ ㄏㄞˋ，ㄅㄧˇ ㄅㄧㄝˊ ㄖㄣˊ ㄗㄨㄛˋ ㄉㄜ˙ ㄍㄥˋ ㄏㄠˇ。", sentence: "他是一位優秀的運動員。", sentencePinyin: "ㄊㄚ ㄕˋ ㄧ ㄨㄟˋ ㄧㄡ ㄒㄧㄡˋ ㄉㄜ˙ ㄩㄣˋ ㄉㄨㄥˋ ㄩㄢˊ。" },
+        { word: "普通", pinyin: "ㄆㄨˇ ㄊㄨㄥ", definition: "形容很一般，沒有什麼特別的地方。", definitionPinyin: "ㄒㄧㄥˊ ㄖㄨㄥˊ ㄏㄣˇ ㄧ ㄅㄢ，ㄇㄟˊ ㄧㄡˇ ㄕㄣˊ ㄇㄜ˙ ㄊㄜˋ ㄅㄧㄝˊ ㄉㄜ˙ ㄉㄧˋ ㄈㄤ。", sentence: "他的成績很普通。", sentencePinyin: "ㄊㄚ ㄉㄜ˙ ㄔㄥˊ ㄐㄧˋ ㄏㄣˇ ㄆㄨˇ ㄊㄨㄥ。" },
+        { word: "準確", pinyin: "ㄓㄨㄣˇ ㄑㄩㄝˋ", definition: "形容事情做得非常對，沒有錯。", definitionPinyin: "ㄒㄧㄥˊ ㄖㄨㄥˊ ㄕˋ ㄑㄧㄥˊ ㄗㄨㄛˋ ㄉㄜ˙ ㄈㄟ ㄔㄤˊ ㄉㄨㄟˋ，ㄇㄟˊ ㄧㄡˇ ㄘㄨㄛˋ。", sentence: "這個時鐘的時間很準確。", sentencePinyin: "ㄓㄜˋ ㄍㄜ˙ ㄕˊ ㄓㄨㄥ ㄉㄜ˙ ㄕˊ ㄐㄧㄢ ㄏㄣˇ ㄓㄨㄣˇ ㄑㄩㄝˋ。" },
+        { word: "錯誤", pinyin: "ㄘㄨㄛˋ ㄨˋ", definition: "形容事情做錯了，不對。", definitionPinyin: "ㄒㄧㄥˊ ㄖㄨㄥˊ ㄕˋ ㄑㄧㄥˊ ㄗㄨㄛˋ ㄘㄨㄛˋ ㄌㄜ˙，ㄅㄨˋ ㄉㄨㄟˋ。", sentence: "這個答案是錯誤的。", sentencePinyin: "ㄓㄜˋ ㄍㄜ˙ ㄉㄚˊ ㄢˋ ㄕˋ ㄘㄨㄛˋ ㄨˋ ㄉㄜ˙。" },
+        { word: "勇敢", pinyin: "ㄩㄥˇ ㄍㄢˇ", definition: "形容有膽量，不怕危險。", definitionPinyin: "ㄒㄧㄥˊ ㄖㄨㄥˊ ㄧㄡˇ ㄉㄢˇ ㄌㄧㄤˋ，ㄅㄨˋ ㄆㄚˋ ㄨㄟˊ ㄒㄧㄢˇ。", sentence: "小英雄勇敢地救了小貓。", sentencePinyin: "ㄒㄧㄠˇ ㄧㄥ ㄒㄩㄥˊ ㄩㄥˇ ㄍㄢˇ ㄉㄜ˙ ㄐㄧㄡˋ ㄌㄜ˙ ㄒㄧㄠˇ ㄇㄠ。" },
+        { word: "膽怯", pinyin: "ㄉㄢˇ ㄑㄧㄝˋ", definition: "形容膽子小，害怕。", definitionPinyin: "ㄒㄧㄥˊ ㄖㄨㄥˊ ㄉㄢˇ ㄗ˙ ㄒㄧㄠˇ，ㄏㄞˋ ㄆㄚˋ。", sentence: "他膽怯地躲了起來。", sentencePinyin: "ㄊㄚ ㄉㄢˇ ㄑㄧㄝˋ ㄉㄜ˙ ㄉㄨㄛˇ ㄌㄜ˙ ㄑㄧˇ ㄌㄞˊ。" },
+        { word: "勤勞", pinyin: "ㄑㄧㄣˊ ㄌㄠˊ", definition: "形容人很愛工作，很努力。", definitionPinyin: "ㄒㄧㄥˊ ㄖㄨㄥˊ ㄖㄣˊ ㄏㄣˇ ㄞˋ ㄍㄨㄥ ㄗㄨㄛˋ，ㄏㄣˇ ㄋㄨˇ ㄌㄧˋ。", sentence: "蜜蜂是勤勞的昆蟲。", sentencePinyin: "ㄇㄧˋ ㄈㄥ ㄕˋ ㄑㄧㄣˊ ㄌㄠˊ ㄉㄜ˙ ㄎㄨㄣ ㄔㄨㄥˊ。" },
+        { word: "懶惰", pinyin: "ㄌㄢˇ ㄉㄨㄛˋ", definition: "形容人不愛做事。", definitionPinyin: "ㄒㄧㄥˊ ㄖㄨㄥˊ ㄖㄣˊ ㄅㄨˋ ㄞˋ ㄗㄨㄛˋ ㄕˋ。", sentence: "他太懶惰了，不想幫忙做家事。", sentencePinyin: "ㄊㄚ ㄊㄞˋ ㄌㄢˇ ㄉㄨㄛˋ ㄌㄜ˙，ㄅㄨˋ ㄒㄧㄤˇ ㄅㄤ ㄇㄤˊ ㄗㄨㄛˋ ㄐㄧㄚ ㄕˋ。" },
+        { word: "平靜", pinyin: "ㄆㄧㄥˊ ㄐㄧㄥˋ", definition: "形容心情或環境很安穩，沒有波動。", definitionPinyin: "ㄒㄧㄥˊ ㄖㄨㄥˊ ㄒㄧㄣ ㄑㄧㄥˊ ㄏㄨㄛˋ ㄏㄨㄢˊ ㄐㄧㄥˋ ㄏㄣˇ ㄢ ㄨㄣˇ，ㄇㄟˊ ㄧㄡˇ ㄅㄛ ㄉㄨㄥˋ。", sentence: "他的心情很平靜。", sentencePinyin: "ㄊㄚ ㄉㄜ˙ ㄒㄧㄣ ㄑㄧㄥˊ ㄏㄣˇ ㄆㄧㄥˊ ㄐㄧㄥˋ。" },
+        { word: "急躁", pinyin: "ㄐㄧˊ ㄗㄠˋ", definition: "形容心情很急，沒有耐心。", definitionPinyin: "ㄒㄧㄥˊ ㄖㄨㄥˊ ㄒㄧㄣ ㄑㄧㄥˊ ㄏㄣˇ ㄐㄧˊ，ㄇㄟˊ ㄧㄡˇ ㄋㄞˋ ㄒㄧㄣ。", sentence: "他是一個很急躁的人。", sentencePinyin: "ㄊㄚ ㄕˋ ㄧ ㄍㄜˋ ㄏㄣˇ ㄐㄧˊ ㄗㄠˋ ㄉㄜ˙ ㄖㄣˊ。" },
+        { word: "健康", pinyin: "ㄐㄧㄢˋ ㄎㄤ", definition: "形容身體狀況良好。", definitionPinyin: "ㄒㄧㄥˊ ㄖㄨㄥˊ ㄕㄣ ㄊㄧˇ ㄓㄨㄤˋ ㄎㄨㄤˋ ㄌㄧㄤˊ ㄏㄠˇ。", sentence: "多運動才能擁有健康的身體。", sentencePinyin: "ㄉㄨㄛ ㄩㄣˋ ㄉㄨㄥˋ ㄘㄞˊ ㄋㄥˊ ㄧㄡ ㄧㄡˇ ㄐㄧㄢˋ ㄎㄤ ㄉㄜ˙ ㄕㄣ ㄊㄧˇ。" },
+        { word: "虛弱", pinyin: "ㄒㄩ ㄖㄨㄛˋ", definition: "形容身體很弱，沒有力氣。", definitionPinyin: "ㄒㄧㄥˊ ㄖㄨㄥˊ ㄕㄣ ㄊㄧˇ ㄏㄣˇ ㄖㄨㄛˋ，ㄇㄟˊ ㄧㄡˇ ㄌㄧˋ ㄑㄧˋ。", sentence: "他生病後身體很虛弱。", sentencePinyin: "ㄊㄚ ㄕㄥ ㄅㄧㄥˋ ㄏㄡˋ ㄕㄣ ㄊㄧˇ ㄏㄣˇ ㄒㄩ ㄖㄨㄛˋ。" },
+        { word: "親切", pinyin: "ㄑㄧㄣ ㄑㄧㄝˋ", definition: "形容人很和藹，很容易親近。", definitionPinyin: "ㄒㄧㄥˊ ㄖㄨㄥˊ ㄖㄣˊ ㄏㄣˇ ㄏㄜˊ ㄞˇ，ㄏㄣˇ ㄖㄨㄥˊ ㄧˋ ㄑㄧㄣ ㄐㄧㄣˋ。", sentence: "這位老師很親切。", sentencePinyin: "ㄓㄜˋ ㄨㄟˋ ㄌㄠˇ ㄕ ㄏㄣˇ ㄑㄧㄣ ㄑㄧㄝˋ。" },
+        { word: "嚴肅", pinyin: "ㄧㄢˊ ㄙㄨˋ", definition: "形容人表情很莊重，不愛笑。", definitionPinyin: "ㄒㄧㄥˊ ㄖㄨㄥˊ ㄖㄣˊ ㄅㄧㄠˇ ㄑㄧㄥˊ ㄏㄣˇ ㄓㄨㄤ ㄓㄨㄥˋ，ㄅㄨˋ ㄞˋ ㄒㄧㄠˋ。", sentence: "校長說話時很嚴肅。", sentencePinyin: "ㄒㄧㄠˋ ㄓㄤˇ ㄕㄨㄛ ㄏㄨㄚˋ ㄕˊ ㄏㄣˇ ㄧㄢˊ ㄙㄨˋ。" },
+        { word: "溫暖", pinyin: "ㄨㄣ ㄋㄨㄢˇ", definition: "形容溫度不冷不熱，很舒服。", definitionPinyin: "ㄒㄧㄥˊ ㄖㄨㄥˊ ㄨㄣ ㄉㄨˋ ㄅㄨˋ ㄌㄥˇ ㄅㄨˋ ㄖㄜˋ，ㄏㄣˇ ㄕㄨ ㄈㄨˊ。", sentence: "太陽的光很溫暖。", sentencePinyin: "ㄊㄞˋ ㄧㄤˊ ㄉㄜ˙ ㄍㄨㄤ ㄏㄣˇ ㄨㄣ ㄋㄨㄢˇ。" },
+        { word: "冰冷", pinyin: "ㄅㄧㄥ ㄌㄥˇ", definition: "形容溫度很低，像冰一樣冷。", definitionPinyin: "ㄒㄧㄥˊ ㄖㄨㄥˊ ㄨㄣ ㄉㄨˋ ㄏㄣˇ ㄉㄧ，ㄒㄧㄤˋ ㄅㄧㄥ ㄧ ㄧㄤˋ ㄌㄥˇ。", sentence: "這杯水很冰冷。", sentencePinyin: "ㄓㄜˋ ㄅㄟ ㄕㄨㄟˇ ㄏㄣˇ ㄅㄧㄥ ㄌㄥˇ。" },
+        { word: "勤奮", pinyin: "ㄑㄧㄣˊ ㄈㄣˋ", definition: "形容做事很努力，不偷懶。", definitionPinyin: "ㄒㄧㄥˊ ㄖㄨㄥˊ ㄗㄨㄛˋ ㄕˋ ㄏㄣˇ ㄋㄨˇ ㄌㄧˋ，ㄅㄨˋ ㄊㄡ ㄌㄢˇ。", sentence: "他是一個勤奮的學生。", sentencePinyin: "ㄊㄚ ㄕˋ ㄧ ㄍㄜˋ ㄑㄧㄣˊ ㄈㄣˋ ㄉㄜ˙ ㄒㄩㄝˊ ㄕㄥ。" },
+        { word: "怠惰", pinyin: "ㄉㄞˋ ㄉㄨㄛˋ", definition: "形容人懶散，不愛做事。", definitionPinyin: "ㄒㄧㄥˊ ㄖㄨㄥˊ ㄖㄣˊ ㄌㄢˇ ㄙㄢˋ，ㄅㄨˋ ㄞˋ ㄗㄨㄛˋ ㄕˋ。", sentence: "因為怠惰，他沒有完成作業。", sentencePinyin: "ㄧㄣ ㄨㄟˋ ㄉㄞˋ ㄉㄨㄛˋ，ㄊㄚ ㄇㄟˊ ㄧㄡˇ ㄨㄢˊ ㄔㄥˊ ㄗㄨㄛˋ ㄧㄝˋ。" },
+        { word: "開心", pinyin: "ㄎㄞ ㄒㄧㄣ", definition: "形容心情愉快，很高興。", definitionPinyin: "ㄒㄧㄥˊ ㄖㄨㄥˊ ㄒㄧㄣ ㄑㄧㄥˊ ㄩˊ ㄎㄨㄞˋ，ㄏㄣˇ ㄍㄠ ㄒㄧㄥˋ。", sentence: "全家人一起出遊，大家都好開心。", sentencePinyin: "ㄑㄩㄢˊ ㄐㄧㄚ ㄖㄣˊ ㄧ ㄑㄧˇ ㄔㄨ ㄧㄡˊ，ㄉㄚˋ ㄐㄧㄚ ㄉㄡ ㄏㄠˇ ㄎㄞ ㄒㄧㄣ。" },
+        { word: "悲傷", pinyin: "ㄅㄟ ㄕㄤ", definition: "形容心情很難過，很傷心。", definitionPinyin: "ㄒㄧㄥˊ ㄖㄨㄥˊ ㄒㄧㄣ ㄑㄧㄥˊ ㄏㄣˇ ㄋㄢˊ ㄍㄨㄛˋ，ㄏㄣˇ ㄕㄤ ㄒㄧㄣ。", sentence: "聽到這個不幸的消息，他感到很悲傷。", sentencePinyin: "ㄊㄧㄥ ㄉㄠˋ ㄓㄜˋ ㄍㄜˋ ㄅㄨˋ ㄒㄧㄥˋ ㄉㄜ˙ ㄒㄧㄠ ㄒㄧ，ㄊㄚ ㄍㄢˇ ㄉㄠˋ ㄏㄣˇ ㄅㄟ ㄕㄤ。" },
+        { word: "興奮", pinyin: "ㄒㄧㄥ ㄈㄣˋ", definition: "形容情緒很激動，很高興。", definitionPinyin: "ㄒㄧㄥˊ ㄖㄨㄥˊ ㄑㄧㄥˊ ㄒㄩˋ ㄏㄣˇ ㄐㄧ ㄉㄨㄥˋ，ㄏㄣˇ ㄍㄠ ㄒㄧㄥˋ。", sentence: "他興奮地跑向媽媽。", sentencePinyin: "ㄊㄚ ㄒㄧㄥˋ ㄈㄣˋ ㄉㄜ˙ ㄆㄠˇ ㄒㄧㄤˋ ㄇㄚ ㄇㄚ。" },
+        { word: "無趣", pinyin: "ㄨˊ ㄑㄩˋ", definition: "形容沒有樂趣，讓人覺得很無聊。", definitionPinyin: "ㄒㄧㄥˊ ㄖㄨㄥˊ ㄇㄟˊ ㄧㄡˇ ㄌㄜˋ ㄑㄩˋ，ㄖㄤˋ ㄖㄣˊ ㄐㄩㄝˊ ㄉㄜ˙ ㄏㄣˇ ㄨˊ ㄌㄧㄠˊ。", sentence: "這場演講很無趣。", sentencePinyin: "ㄓㄜˋ ㄔㄤˇ ㄧㄢˇ ㄐㄧㄤˇ ㄏㄣˇ ㄨˊ ㄑㄩˋ。" },
+        { word: "美麗", pinyin: "ㄇㄟˇ ㄌㄧˋ", definition: "形容人或東西長得很漂亮。", definitionPinyin: "ㄒㄧㄥˊ ㄖㄨㄥˊ ㄖㄣˊ ㄏㄨㄛˋ ㄉㄨㄥ ㄒㄧ ㄓㄤˇ ㄉㄜ˙ ㄏㄣˇ ㄆㄧㄠˋ ㄌㄧㄤˋ。", sentence: "她穿著美麗的衣服。", sentencePinyin: "ㄊㄚ ㄔㄨㄢ ㄓㄜ˙ ㄇㄟˇ ㄌㄧˋ ㄉㄜ˙ ㄧ ㄈㄨˊ。" },
+        { word: "清澈", pinyin: "ㄑㄧㄥ ㄔㄜˋ", definition: "形容水或空氣很乾淨，很透明。", definitionPinyin: "ㄒㄧㄥˊ ㄖㄨㄥˊ ㄕㄨㄟˇ ㄏㄨㄛˋ ㄎㄨㄥ ㄑㄧˋ ㄏㄣˇ ㄍㄢ ㄐㄧㄥˋ，ㄏㄣˇ ㄊㄡˋ ㄇㄧㄥˊ。", sentence: "天空很清澈。", sentencePinyin: "ㄊㄧㄢ ㄎㄨㄥ ㄏㄣˇ ㄑㄧㄥ ㄔㄜˋ。" },
+        { word: "整齊", pinyin: "ㄓㄥˇ ㄑㄧˊ", definition: "形容東西排列得很整齊，沒有亂放。", definitionPinyin: "ㄒㄧㄥˊ ㄖㄨㄥˊ ㄉㄨㄥ ㄒㄧ ㄆㄞˊ ㄌㄧㄝˋ ㄉㄜ˙ ㄏㄣˇ ㄓㄥˇ ㄑㄧˊ，ㄇㄟˊ ㄧㄡˇ ㄌㄨㄢˋ ㄈㄤˋ。", sentence: "把書本擺放整齊。", sentencePinyin: "ㄅㄚˇ ㄕㄨ ㄅㄣˇ ㄅㄞˇ ㄈㄤˋ ㄓㄥˇ ㄑㄧˊ。" },
+        { word: "整潔", pinyin: "ㄓㄥˇ ㄐㄧㄝˊ", definition: "形容環境很乾淨，很舒服。", definitionPinyin: "ㄒㄧㄥˊ ㄖㄨㄥˊ ㄏㄨㄢˊ ㄐㄧㄥˋ ㄏㄣˇ ㄍㄢ ㄐㄧㄥˋ，ㄏㄣˇ ㄕㄨ ㄈㄨˊ。", sentence: "這間房間非常整潔。", sentencePinyin: "ㄓㄜˋ ㄐㄧㄢ ㄈㄤˊ ㄐㄧㄢ ㄈㄟ ㄔㄤˊ ㄓㄥˇ ㄐㄧㄝˊ。" },
+        { word: "寬闊", pinyin: "ㄎㄨㄢ ㄎㄨㄛˋ", definition: "形容地方很寬，範圍很大。", definitionPinyin: "ㄒㄧㄥˊ ㄖㄨㄥˊ ㄉㄧˋ ㄈㄤ ㄏㄣˇ ㄎㄨㄢ，ㄈㄢˊ ㄨㄟˊ ㄏㄣˇ ㄉㄚˋ。", sentence: "這條道路很寬闊。", sentencePinyin: "ㄓㄜˋ ㄊㄧㄠˊ ㄉㄠˋ ㄌㄨˋ ㄏㄣˇ ㄎㄨㄢ ㄎㄨㄛˋ。" },
+        { word: "狹窄", pinyin: "ㄒㄧㄚˊ ㄓㄞˇ", definition: "形容地方很窄，很難通過。", definitionPinyin: "ㄒㄧㄥˊ ㄖㄨㄥˊ ㄉㄧˋ ㄈㄤ ㄏㄣˇ ㄓㄞˇ，ㄏㄣˇ ㄋㄢˊ ㄊㄨㄥ ㄍㄨㄛˋ。", sentence: "這條巷子很狹窄。", sentencePinyin: "ㄓㄜˋ ㄊㄧㄠˊ ㄒㄧㄠˇ ㄒㄧㄤˋ ㄏㄣˇ ㄒㄧㄚˊ ㄓㄞˇ。" },
+        { word: "純潔", pinyin: "ㄔㄨㄣˊ ㄐㄧㄝˊ", definition: "形容心地很乾淨，沒有壞念頭。", definitionPinyin: "ㄒㄧㄥˊ ㄖㄨㄥˊ ㄒㄧㄣ ㄉㄧˋ ㄏㄣˇ ㄍㄢ ㄐㄧㄥˋ，ㄇㄟˊ ㄧㄡˇ ㄏㄨㄞˋ ㄋㄧㄢˋ ㄊㄡˊ。", sentence: "小寶寶的笑容很純潔。", sentencePinyin: "ㄒㄧㄠˇ ㄅㄠˇ ㄅㄠ˙ ㄉㄜ˙ ㄒㄧㄠˋ ㄖㄨㄥˊ ㄏㄣˇ ㄔㄨㄣˊ ㄐㄧㄝˊ。" },
+        { word: "誠實", pinyin: "ㄔㄥˊ ㄕˊ", definition: "形容人不會說謊，很真實。", definitionPinyin: "ㄒㄧㄥˊ ㄖㄨㄥˊ ㄖㄣˊ ㄅㄨˋ ㄏㄨㄟˋ ㄕㄨㄛ ㄏㄨㄤˇ，ㄏㄣˇ ㄓㄣ ㄕˊ。", sentence: "做人要誠實。", sentencePinyin: "ㄗㄨㄛˋ ㄖㄣˊ ㄧㄠˋ ㄔㄥˊ ㄕˊ。" },
+        { word: "勇敢", pinyin: "ㄩㄥˇ ㄍㄢˇ", definition: "形容人有勇氣，不害怕。", definitionPinyin: "ㄒㄧㄥˊ ㄖㄨㄥˊ ㄖㄣˊ ㄧㄡˇ ㄩㄥˇ ㄑㄧˋ，ㄅㄨˋ ㄏㄞˋ ㄆㄚˋ。", sentence: "他很勇敢，去參加冒險。", sentencePinyin: "ㄊㄚ ㄏㄣˇ ㄩㄥˇ ㄍㄢˇ，ㄑㄩˋ ㄘㄢ ㄐㄧㄚ ㄇㄠˋ ㄒㄧㄢˇ。" },
+        { word: "聰明", pinyin: "ㄘㄨㄥ ㄇㄧㄥˊ", definition: "形容人腦筋動得快，學東西很快。", definitionPinyin: "ㄒㄧㄥˊ ㄖㄨㄥˊ ㄖㄣˊ ㄋㄠˇ ㄐㄧㄣ ㄉㄨㄥˋ ㄉㄜ˙ ㄎㄨㄞˋ，ㄒㄩㄝˊ ㄉㄨㄥ ㄒㄧ ㄏㄣˇ ㄎㄨㄞˋ。", sentence: "這個同學很聰明，總是能想出好辦法。", sentencePinyin: "ㄓㄜˋ ㄍㄜˋ ㄊㄨㄥˊ ㄒㄩㄝˊ ㄏㄣˇ ㄘㄨㄥ ㄇㄧㄥˊ，ㄗㄨㄥˇ ㄕˋ ㄋㄥˊ ㄒㄧㄤˇ ㄔㄨ ㄏㄠˇ ㄅㄢˋ ㄈㄚˇ。" },
+        { word: "懶惰", pinyin: "ㄌㄢˇ ㄉㄨㄛˋ", definition: "形容人什麼事都不想做。", definitionPinyin: "ㄒㄧㄥˊ ㄖㄨㄥˊ ㄖㄣˊ ㄕㄣˊ ㄇㄜ˙ ㄕˋ ㄉㄡ ㄅㄨˋ ㄒㄧㄤˇ ㄗㄨㄛˋ。", sentence: "因為懶惰，他錯過了機會。", sentencePinyin: "ㄧㄣ ㄨㄟˋ ㄌㄢˇ ㄉㄨㄛˋ，ㄊㄚ ㄘㄨㄛˋ ㄍㄨㄛˋ ㄌㄜ˙ ㄐㄧ ㄏㄨㄟˋ。" },
+        { word: "無辜", pinyin: "ㄨˊ ㄍㄨ", definition: "形容沒有做錯事，卻被別人怪罪。", definitionPinyin: "ㄒㄧㄥˊ ㄖㄨㄥˊ ㄇㄟˊ ㄧㄡˇ ㄗㄨㄛˋ ㄘㄨㄛˋ ㄕˋ，ㄑㄩㄝˋ ㄅㄟˋ ㄅㄧㄝˊ ㄖㄣˊ ㄍㄨㄞˋ ㄗㄨㄟˋ。", sentence: "他是一個無辜的受害者。", sentencePinyin: "ㄊㄚ ㄕˋ ㄧ ㄍㄜ˙ ㄨˊ ㄍㄨ ㄉㄜ˙ ㄕㄡˋ ㄏㄞˋ ㄓㄜˇ。" },
+        { word: "快樂", pinyin: "ㄎㄨㄞˋ ㄌㄜˋ", definition: "形容心情很舒服、很幸福。", definitionPinyin: "ㄒㄧㄥˊ ㄖㄨㄥˊ ㄒㄧㄣ ㄑㄧㄥˊ ㄏㄣˇ ㄕㄨ ㄈㄨˊ、ㄏㄣˇ ㄒㄧㄥˋ ㄈㄨˊ。", sentence: "和朋友在一起，我覺得很快樂。", sentencePinyin: "ㄏㄢˊ ㄆㄥˊ ㄧㄡˇ ㄗㄞˋ ㄧˋ ㄑㄧˇ，ㄨㄛˇ ㄐㄩㄝˊ ㄉㄜ˙ ㄏㄣˇ ㄎㄨㄞˋ ㄌㄜˋ。" },
+        { word: "簡單", pinyin: "ㄐㄧㄢˇ ㄉㄢ", definition: "形容事情不複雜，容易了解。", definitionPinyin: "ㄒㄧㄥˊ ㄖㄨㄥˊ ㄕˋ ㄑㄧㄥˊ ㄅㄨˋ ㄈㄨˋ ㄗㄚˊ，ㄖㄨㄥˊ ㄧˋ ㄌㄧㄠˇ ㄐㄧㄝˇ。", sentence: "這道數學題很簡單。", sentencePinyin: "ㄓㄜˋ ㄉㄠˋ ㄕㄨˋ ㄒㄩㄝˊ ㄊㄧˊ ㄏㄣˇ ㄐㄧㄢˇ ㄉㄢ。" },
+        { word: "複雜", pinyin: "ㄈㄨˋ ㄗㄚˊ", definition: "形容事情很難懂，有很多部分。", definitionPinyin: "ㄒㄧㄥˊ ㄖㄨㄥˊ ㄕˋ ㄑㄧㄥˊ ㄏㄣˇ ㄋㄢˊ ㄉㄨㄥˇ，ㄧㄡˇ ㄏㄣˇ ㄉㄨㄛ ㄅㄨˋ ㄈㄣˋ。", sentence: "這個機器看起來很複雜。", sentencePinyin: "ㄓㄜˋ ㄍㄜ˙ ㄐㄧ ㄑㄧˋ ㄎㄢˋ ㄑㄧˇ ㄌㄞˊ ㄏㄣˇ ㄈㄨˋ ㄗㄚˊ。" },
+        { word: "精彩", pinyin: "ㄐㄧㄥ ㄘㄞˇ", definition: "形容內容很豐富，很吸引人。", definitionPinyin: "ㄒㄧㄥˊ ㄖㄨㄥˊ ㄋㄟˋ ㄖㄨㄥˊ ㄏㄣˇ ㄈㄥ ㄈㄨˋ，ㄏㄣˇ ㄒㄧ ㄧㄣˇ ㄖㄣˊ。", sentence: "這場足球賽非常精彩。", sentencePinyin: "ㄓㄜˋ ㄔㄤˇ ㄗㄨˊ ㄑㄧㄡˊ ㄙㄞˋ ㄈㄟ ㄔㄤˊ ㄐㄧㄥ ㄘㄞˇ。" },
+        { word: "模糊", pinyin: "ㄇㄛˊ ㄏㄨˊ", definition: "形容看不清楚，不清楚。", definitionPinyin: "ㄒㄧㄥˊ ㄖㄨㄥˊ ㄎㄢˋ ㄅㄨˋ ㄑㄧㄥ ㄔㄨˇ，ㄅㄨˋ ㄑㄧㄥ ㄔㄨˇ。", sentence: "照片有點模糊。", sentencePinyin: "ㄓㄠˋ ㄆㄧㄢˋ ㄧㄡˇ ㄉㄧㄢˇ ㄇㄛˊ ㄏㄨˊ。" },
+        { word: "清澈", pinyin: "ㄑㄧㄥ ㄔㄜˋ", definition: "形容東西很乾淨，可以看得很清楚。", definitionPinyin: "ㄒㄧㄥˊ ㄖㄨㄥˊ ㄉㄨㄥ ㄒㄧ ㄏㄣˇ ㄍㄢ ㄐㄧㄥˋ，ㄎㄜˇ ㄧˇ ㄎㄢˋ ㄉㄜ˙ ㄏㄣˇ ㄑㄧㄥ ㄔㄨˇ。", sentence: "這片湖水很清澈。", sentencePinyin: "ㄓㄜˋ ㄆㄧㄢˋ ㄏㄨˊ ㄕㄨㄟˇ ㄏㄣˇ ㄑㄧㄥ ㄔㄜˋ。" },
+        { word: "熱鬧", pinyin: "ㄖㄜˋ ㄋㄠˋ", definition: "形容很多人在一起，聲音很大。", definitionPinyin: "ㄒㄧㄥˊ ㄖㄨㄥˊ ㄏㄣˇ ㄉㄨㄛ ㄖㄣˊ ㄗㄞˋ ㄧˋ ㄑㄧˇ，ㄕㄥ ㄧㄣ ㄏㄣˇ ㄉㄚˋ。", sentence: "夜市總是那麼熱鬧。", sentencePinyin: "ㄧㄝˋ ㄕˋ ㄗㄨㄥˇ ㄕˋ ㄋㄚˋ ㄇㄜ˙ ㄖㄜˋ ㄋㄠˋ。" },
+        { word: "安靜", pinyin: "ㄢ ㄐㄧㄥˋ", definition: "形容沒有吵鬧的聲音。", definitionPinyin: "ㄒㄧㄥˊ ㄖㄨㄥˊ ㄇㄟˊ ㄧㄡˇ ㄔㄠˇ ㄋㄠˋ ㄉㄜ˙ ㄕㄥ ㄧㄣ。", sentence: "圖書館裡很安靜。", sentencePinyin: "ㄊㄨˊ ㄕㄨ ㄍㄨㄢˇ ㄌㄧˇ ㄏㄣˇ ㄢ ㄐㄧㄥˋ。" },
+        { word: "簡潔", pinyin: "ㄐㄧㄢˇ ㄐㄧㄝˊ", definition: "形容說話或寫文章不囉唆，很簡單明瞭。", definitionPinyin: "ㄒㄧㄥˊ ㄖㄨㄥˊ ㄕㄨㄛ ㄏㄨㄚˋ ㄏㄨㄛˋ ㄒㄧㄝˇ ㄨㄣˊ ㄓㄤ ㄅㄨˋ ㄌㄨㄛ ㄙㄨㄛ，ㄏㄣˇ ㄐㄧㄢˇ ㄉㄢ ㄇㄧㄥˊ ㄌㄧㄠˇ。", sentence: "這篇文章寫得簡潔有力。", sentencePinyin: "ㄓㄜˋ ㄆㄧㄢ ㄨㄣˊ ㄓㄤ ㄒㄧㄝˇ ㄉㄜ˙ ㄐㄧㄢˇ ㄐㄧㄝˊ ㄧㄡˇ ㄌㄧˋ。" },
+        { word: "廣闊", pinyin: "ㄍㄨㄤˇ ㄎㄨㄛˋ", definition: "形容地方很大，範圍很廣。", definitionPinyin: "ㄒㄧㄥˊ ㄖㄨㄥˊ ㄉㄧˋ ㄈㄤ ㄏㄣˇ ㄉㄚˋ，ㄈㄢˊ ㄨㄟˊ ㄏㄣˇ ㄍㄨㄤˇ。", sentence: "天空廣闊無邊。", sentencePinyin: "ㄊㄧㄢ ㄎㄨㄥ ㄍㄨㄤˇ ㄎㄨㄛˋ ㄨˊ ㄅㄧㄢ。" },
+        { word: "簡陋", pinyin: "ㄐㄧㄢˇ ㄌㄡˋ", definition: "形容房子或設備簡單又破舊。", definitionPinyin: "ㄒㄧㄥˊ ㄖㄨㄥˊ ㄈㄤˊ ㄗ˙ ㄏㄨㄛˋ ㄕㄜˋ ㄅㄟˋ ㄐㄧㄢˇ ㄉㄢ ㄧㄡˋ ㄆㄛˋ ㄐㄧㄡˋ。", sentence: "這個小木屋雖然簡陋，但住起來很溫馨。", sentencePinyin: "ㄓㄜˋ ㄍㄜ˙ ㄒㄧㄠˇ ㄇㄨˋ ㄨ ㄙㄨㄟ ㄖㄢˊ ㄐㄧㄢˇ ㄌㄡˋ，ㄉㄢˋ ㄓㄨˋ ㄑㄧˇ ㄌㄞˊ ㄏㄣˇ ㄨㄣ ㄒㄧㄣ。" }
+    ];
+
+    function generateWords() {
+        const wordsContainer = document.getElementById('wordsContainer');
+        const fragment = document.createDocumentFragment();
+       
+        const shuffledWords = WORDS.sort(() => 0.5 - Math.random());
+        const selectedWords = shuffledWords.slice(0, 10);
+
+        selectedWords.forEach(wordData => {
+            const wordItem = document.createElement('div');
+            wordItem.className = 'word-item';
+
+            const wordTitle = document.createElement('div');
+            wordTitle.className = 'word-title';
+
+            const wordLink = document.createElement('a');
+            wordLink.className = 'word-link';
+            wordLink.href = https://www.moedict.tw/${wordData.word};
+            wordLink.target = "_blank";
+            wordLink.textContent = wordData.word;
+
+            const pinyinSpan = document.createElement('span');
+            pinyinSpan.className = 'pinyin';
+            pinyinSpan.textContent = (${wordData.pinyin});
+
+            wordTitle.appendChild(wordLink);
+            wordTitle.appendChild(pinyinSpan);
+
+            const definition = document.createElement('p');
+            definition.className = 'definition';
+            definition.innerHTML = 解釋：${wordData.definition} &lt;br&gt; &lt;span class=&quot;pinyin&quot;&gt;(${wordData.definitionPinyin})&lt;/span&gt;;
+
+            const sentence = document.createElement('p');
+            sentence.className = 'sentence';
+            sentence.innerHTML = 造句：${wordData.sentence} &lt;br&gt; &lt;span class=&quot;pinyin&quot;&gt;(${wordData.sentencePinyin})&lt;/span&gt;;
+
+            wordItem.appendChild(wordTitle);
+            wordItem.appendChild(definition);
+            wordItem.appendChild(sentence);
+
+            fragment.appendChild(wordItem);
+        });
+
+        wordsContainer.innerHTML = '';
+        wordsContainer.appendChild(fragment);
+    }
+
+    window.onload = generateWords;
+</script>
+
+</body>
+</html>
